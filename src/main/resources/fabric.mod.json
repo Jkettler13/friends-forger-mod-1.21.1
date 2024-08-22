@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "friendsforgermod",
+	"version": "${version}",
+	"name": "Friends Forger Mod",
+	"description": "This is a mod that implements custom items that fit the 10/10 gang :)",
+	"authors": [
+		"Blackbeltboy13!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/friendsforgermod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bbb13.friendsforgermod.FriendsForgerMod"
+		],
+		"client": [
+			"net.bbb13.friendsforgermod.FriendsForgerModClient"
+		],
+		"fabric-datagen": [
+			"net.bbb13.friendsforgermod.FriendsForgerModDataGenerator"
+		]
+	},
+	"mixins": [
+		"friendsforgermod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
