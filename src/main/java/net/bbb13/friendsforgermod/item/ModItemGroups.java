@@ -21,6 +21,7 @@ public class ModItemGroups {
                         entries.add(ModItems.JONATHANS_RUBIKS_CUBE);
 
                         entries.add(ModBlocks.MEDICINE_BLOCK);
+                        entries.add(ModBlocks.CHEESE_BLOCK);
                     }).build());
 
     public static void registerItemGroups() {
