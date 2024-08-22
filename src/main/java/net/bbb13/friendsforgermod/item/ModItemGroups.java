@@ -1,6 +1,7 @@
 package net.bbb13.friendsforgermod.item;
 
 import net.bbb13.friendsforgermod.FriendsForgerMod;
+import net.bbb13.friendsforgermod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -18,6 +19,8 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.JONATHANS_BLACK_BELT)).entries((displayContext, entries) -> {
                         entries.add(ModItems.JONATHANS_BLACK_BELT);
                         entries.add(ModItems.JONATHANS_RUBIKS_CUBE);
+
+                        entries.add(ModBlocks.MEDICINE_BLOCK);
                     }).build());
 
     public static void registerItemGroups() {

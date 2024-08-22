@@ -1,6 +1,8 @@
 {
-  "item.friendsforgermod.jonathans_black_belt" : "Jonathan's Black Belt",
-  "item.friendsforgermod.jonathans_rubiks_cube" : "Jonathan's Rubik's Cube",
+  "item.friendsforgermod.jonathans_black_belt": "Jonathan's Black Belt",
+  "item.friendsforgermod.jonathans_rubiks_cube": "Jonathan's Rubik's Cube",
 
-  "itemgroup.friends_items" : "Friends Forger Items"
+  "block.friendsforgermod.medicine_block": "Medicine Block",
+
+  "itemgroup.friends_items": "Friends Forger Items"
 }
