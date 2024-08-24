@@ -13,13 +13,13 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     public static final Block MEDICINE_BLOCK = registerBlock("medicine_block",
-            new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).luminance(state -> 7)));
+            new Block(AbstractBlock.Settings.create().strength(1.0f).requiresTool()));
     public static final Block CHEESE_BLOCK = registerBlock("cheese_block",
             new Block(AbstractBlock.Settings.copy(Blocks.RED_MUSHROOM_BLOCK)));
     public static final Block GRADIENT_BLOCK = registerBlock("gradient_block",
             new Block(AbstractBlock.Settings.copy(Blocks.SCULK)));
     public static final Block MARBLE_BLOCK = registerBlock("marble_block",
-            new Block(AbstractBlock.Settings.copy(Blocks.CALCITE)));
+            new Block(AbstractBlock.Settings.copy(Blocks.CALCITE).requiresTool()));
 
     private static void addItemsToNaturalBlocksItemGroup(FabricItemGroupEntries entries) {
         entries.add(ModBlocks.MARBLE_BLOCK);
@@ -30,8 +30,8 @@ public class ModBlocks {
         return Registry.register(Registries.BLOCK, Identifier.of(FriendsForgerMod.MOD_ID, name), block);
     }
 
-    private static Item registerBlockItem(String name, Block block) {
-        return Registry.register(Registries.ITEM, Identifier.of(FriendsForgerMod.MOD_ID, name),
+    private static void registerBlockItem(String name, Block block) {
+        Registry.register(Registries.ITEM, Identifier.of(FriendsForgerMod.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
     }
 
