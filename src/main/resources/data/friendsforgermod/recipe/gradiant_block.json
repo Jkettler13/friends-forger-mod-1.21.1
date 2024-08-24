@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "XSX",
+    "XSX",
+    "XSX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "S": {
+      "item": "amethyst_shard"
+    }
+  },
+  "result": {
+    "id": "friendsforgermod:gradiant_block",
+    "count": 1
+  }
+}
