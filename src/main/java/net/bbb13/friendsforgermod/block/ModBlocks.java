@@ -21,10 +21,10 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).luminance(state -> 7)));
     public static final Block CHEESE_BLOCK = registerBlock("cheese_block",
             new Block(AbstractBlock.Settings.copy(Blocks.RED_MUSHROOM_BLOCK)));
-    public static final Block GRADIANT_BLOCK = registerBlock("gradiant_block",
+    public static final Block GRADIENT_BLOCK = registerBlock("gradiant_block",
             new Block(AbstractBlock.Settings.copy(Blocks.SCULK)));
     public static final Block MARBLE_BLOCK = registerBlock("marble_block",
-            new Block(AbstractBlock.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+            new Block(AbstractBlock.Settings.copy(Blocks.CALCITE)));
 
     private static void addItemsToNaturalBlocksItemGroup(FabricItemGroupEntries entries) {
         entries.add(ModBlocks.MARBLE_BLOCK);
