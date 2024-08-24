@@ -1,6 +1,7 @@
 package net.bbb13.friendsforgermod.item;
 
 import net.bbb13.friendsforgermod.FriendsForgerMod;
+import net.bbb13.friendsforgermod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -15,13 +16,13 @@ public class ModItems {
     public static final Item JONATHANS_BLACK_BELT = registerItem("jonathans_black_belt", new Item( new Item.Settings()));
     public static final Item JONATHANS_RUBIKS_CUBE = registerItem("jonathans_rubiks_cube", new Item( new Item.Settings()));
 
+
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(JONATHANS_RUBIKS_CUBE);
     }
     private static void addItemsToCombatTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(JONATHANS_BLACK_BELT);
     }
-
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(FriendsForgerMod.MOD_ID, name), item);

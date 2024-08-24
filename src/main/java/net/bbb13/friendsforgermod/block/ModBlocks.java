@@ -1,24 +1,34 @@
 package net.bbb13.friendsforgermod.block;
 
 import net.bbb13.friendsforgermod.FriendsForgerMod;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
+import net.bbb13.friendsforgermod.item.ModItems;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.*;
+import net.minecraft.block.entity.BeaconBlockEntity;
+import net.minecraft.block.enums.NoteBlockInstrument;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     public static final Block MEDICINE_BLOCK = registerBlock("medicine_block",
-            new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK)));
+            new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).luminance(state -> 7)));
     public static final Block CHEESE_BLOCK = registerBlock("cheese_block",
             new Block(AbstractBlock.Settings.copy(Blocks.RED_MUSHROOM_BLOCK)));
     public static final Block GRADIANT_BLOCK = registerBlock("gradiant_block",
             new Block(AbstractBlock.Settings.copy(Blocks.SCULK)));
     public static final Block MARBLE_BLOCK = registerBlock("marble_block",
-            new Block(AbstractBlock.Settings.copy(Blocks.CALCITE)));
+            new Block(AbstractBlock.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+
+    private static void addItemsToNaturalBlocksItemGroup(FabricItemGroupEntries entries) {
+        entries.add(ModBlocks.MARBLE_BLOCK);
+    }
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -32,6 +42,8 @@ public class ModBlocks {
 
     public static void registerModBlocks() {
         FriendsForgerMod.LOGGER.info("Registering ModBlocks for " + FriendsForgerMod.MOD_ID);
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModBlocks::addItemsToNaturalBlocksItemGroup);
     }
 
 }
