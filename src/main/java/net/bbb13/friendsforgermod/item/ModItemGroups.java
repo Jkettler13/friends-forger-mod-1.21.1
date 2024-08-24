@@ -22,6 +22,7 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.MEDICINE_BLOCK);
                         entries.add(ModBlocks.CHEESE_BLOCK);
+                        entries.add(ModBlocks.GRADIANT_BLOCK);
                     }).build());
 
     public static void registerItemGroups() {
