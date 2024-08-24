@@ -1,19 +1,14 @@
 package net.bbb13.friendsforgermod.block;
 
 import net.bbb13.friendsforgermod.FriendsForgerMod;
-import net.bbb13.friendsforgermod.item.ModItems;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
-import net.minecraft.block.entity.BeaconBlockEntity;
-import net.minecraft.block.enums.NoteBlockInstrument;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
@@ -21,7 +16,7 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).luminance(state -> 7)));
     public static final Block CHEESE_BLOCK = registerBlock("cheese_block",
             new Block(AbstractBlock.Settings.copy(Blocks.RED_MUSHROOM_BLOCK)));
-    public static final Block GRADIENT_BLOCK = registerBlock("gradiant_block",
+    public static final Block GRADIENT_BLOCK = registerBlock("gradient_block",
             new Block(AbstractBlock.Settings.copy(Blocks.SCULK)));
     public static final Block MARBLE_BLOCK = registerBlock("marble_block",
             new Block(AbstractBlock.Settings.copy(Blocks.CALCITE)));
