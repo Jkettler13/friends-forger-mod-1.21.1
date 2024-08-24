@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     public static final Block MEDICINE_BLOCK = registerBlock("medicine_block",
-            new Block(AbstractBlock.Settings.create().strength(1.0f).requiresTool()));
+            new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).requiresTool()));
     public static final Block CHEESE_BLOCK = registerBlock("cheese_block",
             new Block(AbstractBlock.Settings.copy(Blocks.RED_MUSHROOM_BLOCK)));
     public static final Block GRADIENT_BLOCK = registerBlock("gradient_block",
