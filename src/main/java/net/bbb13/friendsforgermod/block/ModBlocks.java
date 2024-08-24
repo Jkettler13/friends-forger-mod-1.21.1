@@ -1,6 +1,7 @@
 package net.bbb13.friendsforgermod.block;
 
 import net.bbb13.friendsforgermod.FriendsForgerMod;
+import net.bbb13.friendsforgermod.block.custom.MedicineBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
@@ -13,7 +14,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     public static final Block MEDICINE_BLOCK = registerBlock("medicine_block",
-            new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).requiresTool()));
+            new MedicineBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).luminance(state -> 8).requiresTool()));
     public static final Block CHEESE_BLOCK = registerBlock("cheese_block",
             new Block(AbstractBlock.Settings.copy(Blocks.RED_MUSHROOM_BLOCK)));
     public static final Block GRADIENT_BLOCK = registerBlock("gradient_block",
