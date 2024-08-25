@@ -8,6 +8,7 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
@@ -75,5 +76,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.SUGAR),conditionsFromItem(Items.SUGAR))
                 .criterion(hasItem(Items.WATER_BUCKET),conditionsFromItem(Items.WATER_BUCKET))
                 .offerTo(exporter, Identifier.of(getRecipeName(ModItems.ENERGY_DRINK)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS,ModBlocks.MARBLE_SLAB, Ingredient.ofItems(ModBlocks.MARBLE_BLOCK))
+                .criterion(hasItem(ModBlocks.MARBLE_BLOCK),conditionsFromItem(ModBlocks.MARBLE_BLOCK))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModBlocks.MARBLE_SLAB)));
+
+        createStairsRecipe(ModBlocks.MARBLE_STAIRS, Ingredient.ofItems(ModBlocks.MARBLE_BLOCK))
+                .criterion(hasItem(ModBlocks.MARBLE_BLOCK),conditionsFromItem(ModBlocks.MARBLE_BLOCK))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModBlocks.MARBLE_STAIRS)));
+
+        getWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MARBLE_WALL, Ingredient.ofItems(ModBlocks.MARBLE_BLOCK))
+                .criterion(hasItem(ModBlocks.MARBLE_BLOCK),conditionsFromItem(ModBlocks.MARBLE_BLOCK))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModBlocks.MARBLE_WALL)));
     }
 }

@@ -11,7 +11,11 @@
 
   "block.friendsforgermod.cheese_block": "Block of Cheese",
   "block.friendsforgermod.gradient_block": "Gradient Block",
+
   "block.friendsforgermod.marble_block": "Marble",
+  "block.friendsforgermod.marble_stairs": "Marble Stairs",
+  "block.friendsforgermod.marble_slab": "Marble Slab",
+  "block.friendsforgermod.marble_wall": "Marble Wall",
 
   "itemgroup.friends_items": "Friends Forger Items"
 }

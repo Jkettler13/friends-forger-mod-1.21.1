@@ -25,6 +25,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CHEESE_BLOCK);
                         entries.add(ModBlocks.GRADIENT_BLOCK);
                         entries.add(ModBlocks.MARBLE_BLOCK);
+                        entries.add(ModBlocks.MARBLE_STAIRS);
+                        entries.add(ModBlocks.MARBLE_SLAB);
+                        entries.add(ModBlocks.MARBLE_WALL);
                     }).build());
 
     public static void registerItemGroups() {

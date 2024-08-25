@@ -17,9 +17,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.MEDICINE_BLOCK)
-                .add(ModBlocks.MARBLE_BLOCK);
+                .add(ModBlocks.MARBLE_BLOCK)
+                .add(ModBlocks.MARBLE_STAIRS)
+                .add(ModBlocks.MARBLE_WALL)
+                .add(ModBlocks.MARBLE_SLAB);
+
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.MEDICINE_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.MARBLE_WALL);
     }
 }

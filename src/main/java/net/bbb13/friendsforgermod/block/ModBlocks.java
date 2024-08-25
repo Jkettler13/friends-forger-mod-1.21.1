@@ -22,6 +22,14 @@ public class ModBlocks {
     public static final Block MARBLE_BLOCK = registerBlock("marble_block",
             new Block(AbstractBlock.Settings.copy(Blocks.CALCITE).requiresTool()));
 
+
+    public static final Block MARBLE_STAIRS = registerBlock("marble_stairs",
+            new StairsBlock(ModBlocks.MARBLE_BLOCK.getDefaultState(), AbstractBlock.Settings.copy(Blocks.CALCITE).requiresTool()));
+    public static final Block MARBLE_SLAB = registerBlock("marble_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.CALCITE).requiresTool()));
+    public static final Block MARBLE_WALL = registerBlock("marble_wall",
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.CALCITE).requiresTool()));
+
     private static void addItemsToNaturalBlocksItemGroup(FabricItemGroupEntries entries) {
         entries.add(ModBlocks.MARBLE_BLOCK);
     }

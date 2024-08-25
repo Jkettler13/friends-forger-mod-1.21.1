@@ -1,6 +1,9 @@
 {
   "values": [
     "friendsforgermod:medicine_block",
-    "friendsforgermod:marble_block"
+    "friendsforgermod:marble_block",
+    "friendsforgermod:marble_stairs",
+    "friendsforgermod:marble_wall",
+    "friendsforgermod:marble_slab"
   ]
 }

@@ -1,5 +1,8 @@
-// 1.21.1	2024-08-25T06:03:06.9000475	Friends Forger Mod/Block Loot Tables
+// 1.21.1	2024-08-25T06:58:45.6337261	Friends Forger Mod/Block Loot Tables
+064f7d5cd961f1ac5a6c59ca7ed2aaad7f776e90 data\friendsforgermod\loot_table\blocks\marble_wall.json
 9bf1030318b6d818d6df464ec5dd32e8ebad6a48 data\friendsforgermod\loot_table\blocks\marble_block.json
+1ddf6c6571d976e609b9fee28ba767a2636eeb53 data\friendsforgermod\loot_table\blocks\marble_slab.json
+76d430a3e0b1f7672e04a3fc04ea89a5433297a3 data\friendsforgermod\loot_table\blocks\marble_stairs.json
 9cd90056d49cc89f1357b5aca4615a54fafd04e3 data\friendsforgermod\loot_table\blocks\medicine_block.json
 d946ffd50f8a680dc07fcb400ec346cc059e70ea data\friendsforgermod\loot_table\blocks\gradient_block.json
 7141981cb42294cd7f0ed91954ca18276f11d492 data\friendsforgermod\loot_table\blocks\cheese_block.json
