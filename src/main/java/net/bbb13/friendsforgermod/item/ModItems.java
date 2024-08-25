@@ -1,6 +1,7 @@
 package net.bbb13.friendsforgermod.item;
 
 import net.bbb13.friendsforgermod.FriendsForgerMod;
+import net.bbb13.friendsforgermod.item.custom.DrinkItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -14,8 +15,11 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item JONATHANS_BLACK_BELT = registerItem("jonathans_black_belt", new Item( new Item.Settings()));
     public static final Item JONATHANS_RUBIKS_CUBE = registerItem("jonathans_rubiks_cube", new Item( new Item.Settings()));
+    public static final Item ENERGY_DRINK = registerItem("energy_drink", new DrinkItem( new Item.Settings().food(ModFoodComponents.ENERGY_DRINK)));
 
-
+    private static void addItemsToFoodTabItemGroup(FabricItemGroupEntries entries) {
+        entries.add(ENERGY_DRINK);
+    }
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(JONATHANS_RUBIKS_CUBE);
     }
@@ -29,7 +33,7 @@ public class ModItems {
 
     public static void registerModItems() {
         FriendsForgerMod.LOGGER.info("Registering Mod items for " + FriendsForgerMod.MOD_ID);
-
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemsToFoodTabItemGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTabItemGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemsToCombatTabItemGroup);
     }

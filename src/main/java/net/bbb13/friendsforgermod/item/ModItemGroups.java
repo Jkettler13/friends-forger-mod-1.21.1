@@ -19,6 +19,7 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.JONATHANS_BLACK_BELT)).entries((displayContext, entries) -> {
                         entries.add(ModItems.JONATHANS_BLACK_BELT);
                         entries.add(ModItems.JONATHANS_RUBIKS_CUBE);
+                        entries.add(ModItems.ENERGY_DRINK);
 
                         entries.add(ModBlocks.MEDICINE_BLOCK);
                         entries.add(ModBlocks.CHEESE_BLOCK);
