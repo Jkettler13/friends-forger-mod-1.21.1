@@ -3,7 +3,12 @@
   "item.friendsforgermod.jonathans_rubiks_cube": "Jonathan's Rubik's Cube",
   "item.friendsforgermod.energy_drink": "Energy Drink",
 
+  "tooltip.friendsforgermod.energy_drink.tooltip": "Gives Speed III and Jump Boost for 20 seconds",
+
   "block.friendsforgermod.medicine_block": "Medicine Block",
+
+  "tooltip.friendsforgermod.medicine_block.tooltip": "On Right Click, gives Regen V for 10 seconds",
+
   "block.friendsforgermod.cheese_block": "Block of Cheese",
   "block.friendsforgermod.gradient_block": "Gradient Block",
   "block.friendsforgermod.marble_block": "Marble",
