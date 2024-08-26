@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "L": {
+      "item": "friendsforgermod:lonsdaleite"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "L L",
+    "L L"
+  ],
+  "result": {
+    "count": 1,
+    "id": "friendsforgermod:lonsdaleite_leggings"
+  }
+}

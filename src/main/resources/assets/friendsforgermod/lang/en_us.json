@@ -10,6 +10,11 @@
   "item.friendsforgermod.lonsdaleite_shovel": "Lonsdaleite Shovel",
   "item.friendsforgermod.lonsdaleite_hoe": "Lonsdaleite Hoe",
 
+  "item.friendsforgermod.lonsdaleite_helmet": "Lonsdaleite Helmet",
+  "item.friendsforgermod.lonsdaleite_chestplate": "Lonsdaleite Chestplate",
+  "item.friendsforgermod.lonsdaleite_leggings": "Lonsdaleite Leggings",
+  "item.friendsforgermod.lonsdaleite_boots": "Lonsdaleite Boots",
+
   "item.friendsforgermod.energy_drink": "Energy Drink",
   "tooltip.friendsforgermod.energy_drink.tooltip": "Gives Speed III and Jump Boost for 20 seconds",
 

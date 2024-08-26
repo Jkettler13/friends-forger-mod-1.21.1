@@ -139,5 +139,35 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
                 .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_HOE)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.LONSDALEITE_HELMET, 1)
+                .pattern("LLL")
+                .pattern("L L")
+                .input('L', ModItems.LONSDALEITE)
+                .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_HELMET)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.LONSDALEITE_CHESTPLATE, 1)
+                .pattern("L L")
+                .pattern("LLL")
+                .pattern("LLL")
+                .input('L', ModItems.LONSDALEITE)
+                .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_CHESTPLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.LONSDALEITE_LEGGINGS, 1)
+                .pattern("LLL")
+                .pattern("L L")
+                .pattern("L L")
+                .input('L', ModItems.LONSDALEITE)
+                .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_LEGGINGS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.LONSDALEITE_BOOTS, 1)
+                .pattern("L L")
+                .pattern("L L")
+                .input('L', ModItems.LONSDALEITE)
+                .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_BOOTS)));
+
     }
 }

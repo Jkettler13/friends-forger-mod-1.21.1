@@ -2,6 +2,7 @@ package net.bbb13.friendsforgermod.item;
 
 import net.bbb13.friendsforgermod.FriendsForgerMod;
 import net.bbb13.friendsforgermod.item.custom.DrinkItem;
+import net.bbb13.friendsforgermod.item.custom.ModArmorItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
@@ -23,6 +24,11 @@ public class ModItems {
     public static final Item LONSDALEITE_AXE = registerItem("lonsdaleite_axe", new AxeItem(ModToolMaterial.LONSDALEITE,new Item.Settings()));
     public static final Item LONSDALEITE_SHOVEL = registerItem("lonsdaleite_shovel", new ShovelItem(ModToolMaterial.LONSDALEITE,new Item.Settings()));
     public static final Item LONSDALEITE_HOE = registerItem("lonsdaleite_hoe", new HoeItem(ModToolMaterial.LONSDALEITE,new Item.Settings()));
+
+    public static final Item LONSDALEITE_HELMET = registerItem("lonsdaleite_helmet", new ModArmorItem(ModArmorMaterial.LONSDALEITE, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(25))));
+    public static final Item LONSDALEITE_CHESTPLATE = registerItem("lonsdaleite_chestplate", new ArmorItem(ModArmorMaterial.LONSDALEITE, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(25))));
+    public static final Item LONSDALEITE_LEGGINGS = registerItem("lonsdaleite_leggings", new ArmorItem(ModArmorMaterial.LONSDALEITE, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(25))));
+    public static final Item LONSDALEITE_BOOTS = registerItem("lonsdaleite_boots", new ArmorItem(ModArmorMaterial.LONSDALEITE, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(25))));
 
     private static void addItemsToFoodTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(ENERGY_DRINK);

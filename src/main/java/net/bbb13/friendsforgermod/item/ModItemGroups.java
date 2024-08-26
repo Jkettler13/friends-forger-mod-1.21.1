@@ -29,6 +29,11 @@ public class ModItemGroups {
                         entries.add(ModItems.LONSDALEITE_SHOVEL);
                         entries.add(ModItems.LONSDALEITE_HOE);
 
+                        entries.add(ModItems.LONSDALEITE_HELMET);
+                        entries.add(ModItems.LONSDALEITE_CHESTPLATE);
+                        entries.add(ModItems.LONSDALEITE_LEGGINGS);
+                        entries.add(ModItems.LONSDALEITE_BOOTS);
+
                         entries.add(ModBlocks.MEDICINE_BLOCK);
                         entries.add(ModBlocks.CHEESE_BLOCK);
                         entries.add(ModBlocks.GRADIENT_BLOCK);
