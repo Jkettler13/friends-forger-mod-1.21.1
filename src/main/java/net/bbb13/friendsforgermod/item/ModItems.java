@@ -17,6 +17,7 @@ public class ModItems {
     public static final Item JONATHANS_RUBIKS_CUBE = registerItem("jonathans_rubiks_cube", new Item( new Item.Settings()));
     public static final Item ENERGY_DRINK = registerItem("energy_drink", new DrinkItem( new Item.Settings().food(ModFoodComponents.ENERGY_DRINK)));
     public static final Item CRE8IVES_DISC = registerItem("cre8ives_disc", new Item(new Item.Settings()));
+    public static final Item CAT_ZOE = registerItem("cat_zoe", new Item( new Item.Settings()));
 
     public static final Item LONSDALEITE = registerItem("lonsdaleite", new Item(new Item.Settings()));
     public static final Item LONSDALEITE_SWORD = registerItem("lonsdaleite_sword", new SwordItem(ModToolMaterial.LONSDALEITE, new Item.Settings()));

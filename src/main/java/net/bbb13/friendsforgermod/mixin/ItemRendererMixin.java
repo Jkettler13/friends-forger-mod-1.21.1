@@ -22,6 +22,9 @@ public abstract class ItemRendererMixin {
         if(stack.isOf(ModItems.JONATHANS_RUBIKS_CUBE) && renderMode != ModelTransformationMode.GUI && renderMode != ModelTransformationMode.GROUND) {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(Identifier.of(FriendsForgerMod.MOD_ID, "jonathans_rubiks_cube_3d"), "inventory"));
         }
+        if(stack.isOf(ModItems.CAT_ZOE)) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(Identifier.of(FriendsForgerMod.MOD_ID, "cat_zoe_3d"), "inventory"));
+        }
         return value;
     }
 }
