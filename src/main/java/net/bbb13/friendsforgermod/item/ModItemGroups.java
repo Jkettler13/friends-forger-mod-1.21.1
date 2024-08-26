@@ -21,7 +21,13 @@ public class ModItemGroups {
                         entries.add(ModItems.JONATHANS_RUBIKS_CUBE);
                         entries.add(ModItems.ENERGY_DRINK);
                         entries.add(ModItems.CRE8IVES_DISC);
+
                         entries.add(ModItems.LONSDALEITE);
+                        entries.add(ModItems.LONSDALEITE_SWORD);
+                        entries.add(ModItems.LONSDALEITE_PICKAXE);
+                        entries.add(ModItems.LONSDALEITE_AXE);
+                        entries.add(ModItems.LONSDALEITE_SHOVEL);
+                        entries.add(ModItems.LONSDALEITE_HOE);
 
                         entries.add(ModBlocks.MEDICINE_BLOCK);
                         entries.add(ModBlocks.CHEESE_BLOCK);

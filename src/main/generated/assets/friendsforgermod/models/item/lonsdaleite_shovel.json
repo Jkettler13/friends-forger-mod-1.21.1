@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "friendsforgermod:item/lonsdaleite_shovel"
+  }
+}

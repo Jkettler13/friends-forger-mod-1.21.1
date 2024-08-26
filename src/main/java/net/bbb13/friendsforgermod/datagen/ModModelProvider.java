@@ -33,5 +33,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CRE8IVES_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.LONSDALEITE, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.LONSDALEITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.LONSDALEITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.LONSDALEITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.LONSDALEITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.LONSDALEITE_HOE, Models.HANDHELD);
     }
 }

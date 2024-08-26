@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "L": {
+      "item": "friendsforgermod:lonsdaleite"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "LL",
+    "LS",
+    " S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "friendsforgermod:lonsdaleite_axe"
+  }
+}
