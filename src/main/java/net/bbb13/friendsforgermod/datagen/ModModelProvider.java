@@ -30,5 +30,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.JONATHANS_RUBIKS_CUBE, Models.GENERATED);
         itemModelGenerator.register(ModItems.JONATHANS_BLACK_BELT, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENERGY_DRINK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRE8IVES_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LONSDALEITE, Models.GENERATED);
+
     }
 }

@@ -20,6 +20,8 @@ public class ModItemGroups {
                         entries.add(ModItems.JONATHANS_BLACK_BELT);
                         entries.add(ModItems.JONATHANS_RUBIKS_CUBE);
                         entries.add(ModItems.ENERGY_DRINK);
+                        entries.add(ModItems.CRE8IVES_DISC);
+                        entries.add(ModItems.LONSDALEITE);
 
                         entries.add(ModBlocks.MEDICINE_BLOCK);
                         entries.add(ModBlocks.CHEESE_BLOCK);
