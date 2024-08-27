@@ -3,6 +3,7 @@ package net.bbb13.friendsforgermod;
 import net.bbb13.friendsforgermod.block.ModBlocks;
 import net.bbb13.friendsforgermod.item.ModItemGroups;
 import net.bbb13.friendsforgermod.item.ModItems;
+import net.bbb13.friendsforgermod.sound.ModSounds;
 import net.bbb13.friendsforgermod.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 
@@ -18,8 +19,12 @@ public class FriendsForgerMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
 		ModLootTableModifiers.modifyLootTables();
+
+		ModSounds.registerSounds();
 	}
 }

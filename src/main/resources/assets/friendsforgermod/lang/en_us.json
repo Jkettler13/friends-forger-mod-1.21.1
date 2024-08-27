@@ -1,7 +1,11 @@
 {
   "item.friendsforgermod.jonathans_black_belt": "Jonathan's Black Belt",
   "item.friendsforgermod.jonathans_rubiks_cube": "Jonathan's Rubik's Cube",
+
   "item.friendsforgermod.cre8ives_disc": "Cre8ive's Disc",
+  "item.friendsforgermod.markee_song_music_disc": "Cre8ive's Music Disc",
+  "item.friendsforgermod.markee_song_music_disc.desc": "Rex Orange County - Corduroy Dreams",
+
   "item.friendsforgermod.cat_zoe": "Lex's Cat Zoe",
 
 
@@ -16,6 +20,7 @@
   "item.friendsforgermod.lonsdaleite_chestplate": "Lonsdaleite Chestplate",
   "item.friendsforgermod.lonsdaleite_leggings": "Lonsdaleite Leggings",
   "item.friendsforgermod.lonsdaleite_boots": "Lonsdaleite Boots",
+  "tooltip.friendsforgermod.mod_armor_item.tooltip": "Full Set: Speed I & Health Boost I",
 
   "item.friendsforgermod.energy_drink": "Energy Drink",
   "tooltip.friendsforgermod.energy_drink.tooltip": "Gives Speed III and Jump Boost for 20 seconds",
@@ -30,6 +35,12 @@
   "block.friendsforgermod.marble_stairs": "Marble Stairs",
   "block.friendsforgermod.marble_slab": "Marble Slab",
   "block.friendsforgermod.marble_wall": "Marble Wall",
+
+  "sounds.friendsforgermod.medicine_block_break": "Medicine Block break",
+  "sounds.friendsforgermod.medicine_block_fall": "Medicine Block fall",
+  "sounds.friendsforgermod.medicine_block_hit": "Medicine Block hit",
+  "sounds.friendsforgermod.medicine_block_place": "Medicine Block place",
+  "sounds.friendsforgermod.medicine_block_step": "Medicine Block step",
 
   "itemgroup.friends_items": "Friends Forger Items"
 }
