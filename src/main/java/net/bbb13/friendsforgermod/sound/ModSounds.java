@@ -3,10 +3,7 @@ package net.bbb13.friendsforgermod.sound;
 import net.bbb13.friendsforgermod.FriendsForgerMod;
 import net.minecraft.block.jukebox.JukeboxSong;
 import net.minecraft.block.jukebox.JukeboxSongs;
-import net.minecraft.registry.Registerable;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.*;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvent;
@@ -15,8 +12,10 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
 
 public class ModSounds {
-    //public static final JukeboxSong MARKEE_SONG =
+
     public static final SoundEvent MARKEE_SONG_MUSIC_DISC = registerSoundEvent("markee_song_music_disc");
+
+    public static final RegistryKey<JukeboxSong> MARKEE_SONG = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(FriendsForgerMod.MOD_ID, "markee_song_music_disc"));
 
     public static final SoundEvent MEDICINE_BLOCK_BREAK = registerSoundEvent("medicine_block_break");
     public static final SoundEvent MEDICINE_BLOCK_STEP = registerSoundEvent("medicine_block_step");
