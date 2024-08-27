@@ -3,13 +3,20 @@ package net.bbb13.friendsforgermod.item;
 import net.bbb13.friendsforgermod.FriendsForgerMod;
 import net.bbb13.friendsforgermod.item.custom.DrinkItem;
 import net.bbb13.friendsforgermod.item.custom.ModArmorItem;
+import net.bbb13.friendsforgermod.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.jukebox.JukeboxSong;
+import net.minecraft.component.type.JukeboxPlayableComponent;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-
+import net.minecraft.util.Rarity;
 
 
 public class ModItems {
@@ -17,19 +24,20 @@ public class ModItems {
     public static final Item JONATHANS_RUBIKS_CUBE = registerItem("jonathans_rubiks_cube", new Item( new Item.Settings()));
     public static final Item ENERGY_DRINK = registerItem("energy_drink", new DrinkItem( new Item.Settings().food(ModFoodComponents.ENERGY_DRINK)));
     public static final Item CRE8IVES_DISC = registerItem("cre8ives_disc", new Item(new Item.Settings()));
+    public static final Item MARKEE_SONG_MUSIC_DISC = registerItem("markee_song_music_disc", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(RegistryKey.of(RegistryKeys.JUKEBOX_SONG, ModSounds.MARKEE_SONG_MUSIC_DISC.getId()))));
     public static final Item CAT_ZOE = registerItem("cat_zoe", new Item( new Item.Settings()));
 
     public static final Item LONSDALEITE = registerItem("lonsdaleite", new Item(new Item.Settings()));
-    public static final Item LONSDALEITE_SWORD = registerItem("lonsdaleite_sword", new SwordItem(ModToolMaterial.LONSDALEITE, new Item.Settings()));
-    public static final Item LONSDALEITE_PICKAXE = registerItem("lonsdaleite_pickaxe", new PickaxeItem(ModToolMaterial.LONSDALEITE,new Item.Settings()));
-    public static final Item LONSDALEITE_AXE = registerItem("lonsdaleite_axe", new AxeItem(ModToolMaterial.LONSDALEITE,new Item.Settings()));
-    public static final Item LONSDALEITE_SHOVEL = registerItem("lonsdaleite_shovel", new ShovelItem(ModToolMaterial.LONSDALEITE,new Item.Settings()));
-    public static final Item LONSDALEITE_HOE = registerItem("lonsdaleite_hoe", new HoeItem(ModToolMaterial.LONSDALEITE,new Item.Settings()));
+    public static final Item LONSDALEITE_SWORD = registerItem("lonsdaleite_sword", new SwordItem(ModToolMaterial.LONSDALEITE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterial.LONSDALEITE,3,-2.4f))));
+    public static final Item LONSDALEITE_PICKAXE = registerItem("lonsdaleite_pickaxe", new PickaxeItem(ModToolMaterial.LONSDALEITE,new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterial.LONSDALEITE,3,-2.4f))));
+    public static final Item LONSDALEITE_AXE = registerItem("lonsdaleite_axe", new AxeItem(ModToolMaterial.LONSDALEITE,new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterial.LONSDALEITE,3,-2.4f))));
+    public static final Item LONSDALEITE_SHOVEL = registerItem("lonsdaleite_shovel", new ShovelItem(ModToolMaterial.LONSDALEITE,new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterial.LONSDALEITE,3,-2.4f))));
+    public static final Item LONSDALEITE_HOE = registerItem("lonsdaleite_hoe", new HoeItem(ModToolMaterial.LONSDALEITE,new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.LONSDALEITE,3,-2.4f))));
 
     public static final Item LONSDALEITE_HELMET = registerItem("lonsdaleite_helmet", new ModArmorItem(ModArmorMaterial.LONSDALEITE, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(25))));
-    public static final Item LONSDALEITE_CHESTPLATE = registerItem("lonsdaleite_chestplate", new ArmorItem(ModArmorMaterial.LONSDALEITE, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(25))));
-    public static final Item LONSDALEITE_LEGGINGS = registerItem("lonsdaleite_leggings", new ArmorItem(ModArmorMaterial.LONSDALEITE, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(25))));
-    public static final Item LONSDALEITE_BOOTS = registerItem("lonsdaleite_boots", new ArmorItem(ModArmorMaterial.LONSDALEITE, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(25))));
+    public static final Item LONSDALEITE_CHESTPLATE = registerItem("lonsdaleite_chestplate", new ModArmorItem(ModArmorMaterial.LONSDALEITE, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(25))));
+    public static final Item LONSDALEITE_LEGGINGS = registerItem("lonsdaleite_leggings", new ModArmorItem(ModArmorMaterial.LONSDALEITE, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(25))));
+    public static final Item LONSDALEITE_BOOTS = registerItem("lonsdaleite_boots", new ModArmorItem(ModArmorMaterial.LONSDALEITE, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(25))));
 
     private static void addItemsToFoodTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(ENERGY_DRINK);

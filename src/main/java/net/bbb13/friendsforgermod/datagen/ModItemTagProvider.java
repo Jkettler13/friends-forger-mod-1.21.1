@@ -18,5 +18,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.LONSDALEITE_HELMET, ModItems.LONSDALEITE_CHESTPLATE, ModItems.LONSDALEITE_LEGGINGS, ModItems.LONSDALEITE_BOOTS);
+        getOrCreateTagBuilder(ItemTags.AXES).add(ModItems.LONSDALEITE_AXE);
+        getOrCreateTagBuilder(ItemTags.PICKAXES).add(ModItems.LONSDALEITE_PICKAXE);
+        getOrCreateTagBuilder(ItemTags.SHOVELS).add(ModItems.LONSDALEITE_SHOVEL);
+        getOrCreateTagBuilder(ItemTags.HOES).add(ModItems.LONSDALEITE_HOE);
+        getOrCreateTagBuilder(ItemTags.SWORDS).add(ModItems.LONSDALEITE_SWORD);
+
+        getOrCreateTagBuilder(ItemTags.CREEPER_DROP_MUSIC_DISCS)
+                .add(ModItems.MARKEE_SONG_MUSIC_DISC);
+
     }
 }

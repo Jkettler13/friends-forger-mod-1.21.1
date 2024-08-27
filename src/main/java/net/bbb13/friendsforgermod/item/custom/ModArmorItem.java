@@ -8,17 +8,22 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
 
+import java.util.List;
 import java.util.Map;
 
 public class ModArmorItem extends ArmorItem {
 
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmorMaterial.LONSDALEITE.value(), new StatusEffectInstance(StatusEffects.SPEED, 400, 1,
+                    .put(ModArmorMaterial.LONSDALEITE.value(), new StatusEffectInstance(StatusEffects.SPEED, -1, 0,
                             false, false, true)).build();
 
     public ModArmorItem(RegistryEntry<ArmorMaterial> material, Type type, Settings settings) {
@@ -28,7 +33,7 @@ public class ModArmorItem extends ArmorItem {
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if (!world.isClient()) {
-            if (entity instanceof PlayerEntity player && hasFullSuitOfArmorOn(player)){
+            if (entity instanceof PlayerEntity player ){
                 evaluateArmorEffects(player);
             }
         }
@@ -43,6 +48,9 @@ public class ModArmorItem extends ArmorItem {
 
             if (hasCorrectArmorOn(mapArmorMaterial, player)) {
                 addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
+            } else if (player.hasStatusEffect(mapStatusEffect.getEffectType())) {
+                player.removeStatusEffect(StatusEffects.HEALTH_BOOST);
+                player.removeStatusEffect(StatusEffects.SPEED);
             }
         }
     }
@@ -51,9 +59,12 @@ public class ModArmorItem extends ArmorItem {
         boolean hasPlayerEffect = player.hasStatusEffect(mapStatusEffect.getEffectType());
 
         if (hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
-            player.addStatusEffect(new StatusEffectInstance(mapStatusEffect));
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 400, 1,
-                    false, false, true));
+            player.setStatusEffect(new StatusEffectInstance(mapStatusEffect),player);
+            player.setStatusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, -1, 0,
+                    false, false, true),player);
+        } else if (!(hasCorrectArmorOn(mapArmorMaterial, player) && hasPlayerEffect)) {
+            player.removeStatusEffect(StatusEffects.HEALTH_BOOST);
+            player.removeStatusEffect(StatusEffects.SPEED);
         }
     }
 
@@ -82,7 +93,10 @@ public class ModArmorItem extends ArmorItem {
         return helmet.getMaterial().value() == material && breastplate.getMaterial().value() == material &&
                 leggings.getMaterial().value() == material && boots.getMaterial().value() == material;
 
-
+    }
+    @Override
+    public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
+        tooltip.add(Text.translatable("tooltip.friendsforgermod.mod_armor_item.tooltip").formatted(Formatting.AQUA));
     }
 }
 

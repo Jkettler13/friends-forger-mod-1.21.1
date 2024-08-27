@@ -9,7 +9,7 @@ import net.minecraft.registry.tag.TagKey;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    LONSDALEITE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL,2031, 12.0f, 5.0f, 30,() -> Ingredient.ofItems(ModItems.LONSDALEITE));
+    LONSDALEITE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL,2032, 9.0f, 4.0f, 30,() -> Ingredient.ofItems(ModItems.LONSDALEITE));
 
     private final TagKey<Block> inverseTag;
     private final int durability;

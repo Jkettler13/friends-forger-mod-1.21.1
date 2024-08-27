@@ -23,7 +23,7 @@ public class ModArmorMaterial {
         map.put(ArmorItem.Type.CHESTPLATE, 8);
         map.put(ArmorItem.Type.HELMET, 3);
         map.put(ArmorItem.Type.BODY, 11);
-    }), 30, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> Ingredient.ofItems(ModItems.LONSDALEITE));
+    }), 30, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 0.0F, () -> Ingredient.ofItems(ModItems.LONSDALEITE));
 
     private static RegistryEntry<ArmorMaterial> register(
             String id,
