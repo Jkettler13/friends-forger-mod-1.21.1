@@ -29,10 +29,10 @@ public class ModItems {
 
     public static final Item LONSDALEITE = registerItem("lonsdaleite", new Item(new Item.Settings()));
     public static final Item LONSDALEITE_SWORD = registerItem("lonsdaleite_sword", new SwordItem(ModToolMaterial.LONSDALEITE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterial.LONSDALEITE,3,-2.4f))));
-    public static final Item LONSDALEITE_PICKAXE = registerItem("lonsdaleite_pickaxe", new PickaxeItem(ModToolMaterial.LONSDALEITE,new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterial.LONSDALEITE,3,-2.4f))));
-    public static final Item LONSDALEITE_AXE = registerItem("lonsdaleite_axe", new AxeItem(ModToolMaterial.LONSDALEITE,new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterial.LONSDALEITE,3,-2.4f))));
-    public static final Item LONSDALEITE_SHOVEL = registerItem("lonsdaleite_shovel", new ShovelItem(ModToolMaterial.LONSDALEITE,new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterial.LONSDALEITE,3,-2.4f))));
-    public static final Item LONSDALEITE_HOE = registerItem("lonsdaleite_hoe", new HoeItem(ModToolMaterial.LONSDALEITE,new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.LONSDALEITE,3,-2.4f))));
+    public static final Item LONSDALEITE_PICKAXE = registerItem("lonsdaleite_pickaxe", new PickaxeItem(ModToolMaterial.LONSDALEITE,new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterial.LONSDALEITE,1.0f,-2.8f))));
+    public static final Item LONSDALEITE_AXE = registerItem("lonsdaleite_axe", new AxeItem(ModToolMaterial.LONSDALEITE,new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterial.LONSDALEITE,5.0f,-3.0f))));
+    public static final Item LONSDALEITE_SHOVEL = registerItem("lonsdaleite_shovel", new ShovelItem(ModToolMaterial.LONSDALEITE,new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterial.LONSDALEITE,1.5f,-3.0f))));
+    public static final Item LONSDALEITE_HOE = registerItem("lonsdaleite_hoe", new HoeItem(ModToolMaterial.LONSDALEITE,new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.LONSDALEITE,-4,0.0f))));
 
     public static final Item LONSDALEITE_HELMET = registerItem("lonsdaleite_helmet", new ModArmorItem(ModArmorMaterial.LONSDALEITE, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(25))));
     public static final Item LONSDALEITE_CHESTPLATE = registerItem("lonsdaleite_chestplate", new ModArmorItem(ModArmorMaterial.LONSDALEITE, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(25))));
@@ -49,6 +49,12 @@ public class ModItems {
     private static void addItemsToCombatTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(JONATHANS_BLACK_BELT);
         entries.add(CRE8IVES_DISC);
+        entries.add(LONSDALEITE_SWORD);
+        entries.add(LONSDALEITE_AXE);
+        entries.add(LONSDALEITE_HELMET);
+        entries.add(LONSDALEITE_CHESTPLATE);
+        entries.add(LONSDALEITE_LEGGINGS);
+        entries.add(LONSDALEITE_BOOTS);
     }
 
     private static Item registerItem(String name, Item item) {
