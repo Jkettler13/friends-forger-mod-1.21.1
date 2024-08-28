@@ -33,7 +33,7 @@ public class BoomBoxItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
-        tooltip.add(Text.translatable("tooltip.friendsforgermod.cre8ives_boox_box.tooltip").formatted(Formatting.AQUA));
+        tooltip.add(Text.translatable("tooltip.friendsforgermod.cre8ives_boom_box.tooltip").formatted(Formatting.AQUA));
     }
 
 }

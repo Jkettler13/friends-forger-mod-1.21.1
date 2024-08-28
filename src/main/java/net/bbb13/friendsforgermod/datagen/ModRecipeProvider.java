@@ -239,5 +239,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.SPIDER_EYE),conditionsFromItem(Items.SPIDER_EYE))
                 .offerTo(exporter, Identifier.of(getRecipeName(ModItems.SILK_BOOTS)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CRE8IVES_SKATEBOARD, 1)
+                .pattern("LLL")
+                .pattern("I I")
+                .input('L', Items.DARK_OAK_LOG)
+                .input('I', Items.IRON_INGOT)
+                .criterion(hasItem(Items.DARK_OAK_LOG),conditionsFromItem(Items.DARK_OAK_LOG))
+                .criterion(hasItem(Items.IRON_INGOT),conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.CRE8IVES_SKATEBOARD)));
+
+
     }
 }

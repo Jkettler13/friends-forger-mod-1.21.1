@@ -1,4 +1,4 @@
-// 1.21.1	2024-08-28T03:55:11.2905025	Friends Forger Mod/Recipes
+// 1.21.1	2024-08-28T09:01:15.9796683	Friends Forger Mod/Recipes
 0d2f0f6ee51b8789ccbe3d0759b57095145c228c data\friendsforgermod\recipe\gradient_block.json
 aae805ceb42eb40d812de0d78b9313e2c7842019 data\friendsforgermod\recipe\marble_wall.json
 bd8a4a5c3995e6fba18b237627b83bcd64740b3a data\friendsforgermod\recipe\net_ammo.json
@@ -7,6 +7,7 @@ eebefa64bccdc426067899dd84460ff738d37e5a data\friendsforgermod\advancement\recip
 00c4b56ed869a195d7699425dd828190037176e9 data\friendsforgermod\recipe\lonsdaleite_sword.json
 a2525fd9da058947518d19bbf75b352b53ee8dd0 data\friendsforgermod\advancement\recipes\combat\jonathans_black_belt.json
 286724180537290784b10dec3b57345ac6323008 data\friendsforgermod\recipe\lonsdaleite_shovel.json
+f451c272162db3a9a0be853d23d8c80428880300 data\friendsforgermod\advancement\recipes\misc\cre8ives_skateboard.json
 43e8c706b776b2207cc9ae9e825a1e1623d7abd2 data\friendsforgermod\advancement\recipes\misc\cre8ives_boom_box.json
 cb5cf762276095a0c347fd22a663a03dc8a8c4ea data\friendsforgermod\advancement\recipes\misc\medicine_block.json
 5db7126b4ae5c44e00e1b17a02985ebbbb83851f data\friendsforgermod\advancement\recipes\tools\lonsdaleite_axe.json
@@ -37,6 +38,7 @@ e512cf995af4299c6e83941a2ac0061d3af43b20 data\friendsforgermod\recipe\medicine_b
 b7656a730a9f2aa406b6806ab22a02333bfccf46 data\friendsforgermod\advancement\recipes\food\energy_drink.json
 a611d1a2f47fd9687ba1d5c416c0524731a95601 data\friendsforgermod\recipe\silk_leggings.json
 ab14f48afb5744327b9f66cc8d2a58e91d82f622 data\friendsforgermod\advancement\recipes\combat\silk_boots.json
+bf298d5a60bf83ca2ed1f5cd4359f41647dab75e data\friendsforgermod\recipe\cre8ives_skateboard.json
 37098a6054765347b5a818e9bb94141d3be37183 data\friendsforgermod\recipe\lonsdaleite_hoe.json
 3952ff6997629a85852e2896defab4975ba24975 data\friendsforgermod\recipe\lonsdaleite_boots.json
 758a68121053804c7453f6a663329276de2fd6ab data\friendsforgermod\advancement\recipes\building_blocks\marble_slab.json

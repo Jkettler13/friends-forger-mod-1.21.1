@@ -17,9 +17,11 @@ public class ModItems {
     public static final Item JONATHANS_RUBIKS_CUBE = registerItem("jonathans_rubiks_cube", new Item( new Item.Settings()));
     public static final Item ENERGY_DRINK = registerItem("energy_drink", new DrinkItem( new Item.Settings().food(ModFoodComponents.ENERGY_DRINK)));
     public static final Item CRE8IVES_DISC = registerItem("cre8ives_disc", new Item(new Item.Settings()));
+    public static final Item CRE8IVES_SKATEBOARD = registerItem("cre8ives_skateboard", new SkateboardItem(new Item.Settings().maxCount(1)));
     public static final Item CRE8VIES_BOOM_BOX = registerItem("cre8ives_boom_box", new BoomBoxItem(new Item.Settings().maxCount(1).rarity(Rarity.RARE)));
     public static final Item MARKEE_SONG_MUSIC_DISC = registerItem("markee_song_music_disc", new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModSounds.MARKEE_SONG)));
     public static final Item CAT_ZOE = registerItem("cat_zoe", new Item( new Item.Settings()));
+
 
     public static final Item WEB_GUN = registerItem("web_gun", new WebGunItem(new Item.Settings().maxCount(1)));
     public static final Item NET_AMMO = registerItem("net_ammo", new NetAmmoItem(new Item.Settings()));

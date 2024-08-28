@@ -3,11 +3,14 @@
   "item.friendsforgermod.jonathans_rubiks_cube": "Jonathan's Rubik's Cube",
 
   "item.friendsforgermod.cre8ives_disc": "Cre8ive's Disc",
+  "item.friendsforgermod.cre8ives_skateboard": "Cre8ive's Skateboard",
+  "tooltip.friendsforgermod.cre8ives_skateboard.tooltip": "skateboard go brrrr",
+
   "item.friendsforgermod.markee_song_music_disc": "Cre8ive's Music Disc",
   "sounds.friendsforgermod.markee_song_music_disc": "Cre8ive's Song",
   "jukebox_song.friendsforgermod.markee_song_music_disc": "Rex Orange County - Corduroy Dreams",
   "item.friendsforgermod.cre8ives_boom_box": "Cre8ive's Boom Box",
-  "tooltip.friendsforgermod.cre8ives_boox_box.tooltip": "Plays Bangers only",
+  "tooltip.friendsforgermod.cre8ives_boom_box.tooltip": "Plays Bangers only",
 
 
   "item.friendsforgermod.cat_zoe": "Lex's Cat Zoe",
