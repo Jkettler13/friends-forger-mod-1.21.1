@@ -1,8 +1,8 @@
-// 1.21.1	2024-08-26T21:43:34.1942155	Friends Forger Mod/Tags for minecraft:item
+// 1.21.1	2024-08-27T21:31:58.9003269	Friends Forger Mod/Tags for minecraft:item
 e4cd98b8bae8ad800eef2df50d4cd8016ef3f581 data\minecraft\tags\item\trimmable_armor.json
 87f74ee3db7dbe6700e4bea645ff3982010b5d20 data\minecraft\tags\item\axes.json
-7a9bff7ff34a30067ea2114ecab185a596a0e558 data\minecraft\tags\item\creeper_drop_music_discs.json
 a3c926656c7fe6870f502516ddfb4bce0e619d4d data\minecraft\tags\item\swords.json
+7a9bff7ff34a30067ea2114ecab185a596a0e558 data\minecraft\tags\item\creeper_drop_music_discs.json
 2fc2ca4c0b2f569ba5123d6863bbf2f3e5d46406 data\minecraft\tags\item\hoes.json
 366037520e83281ad8c08e2ce808dac08da70b54 data\minecraft\tags\item\shovels.json
 2965155a36b503f9d97721278f1a677c558ff302 data\minecraft\tags\item\pickaxes.json

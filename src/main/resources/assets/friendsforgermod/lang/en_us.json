@@ -4,9 +4,19 @@
 
   "item.friendsforgermod.cre8ives_disc": "Cre8ive's Disc",
   "item.friendsforgermod.markee_song_music_disc": "Cre8ive's Music Disc",
+  "sounds.friendsforgermod.markee_song_music_disc": "Cre8ive's Song",
   "jukebox_song.friendsforgermod.markee_song_music_disc": "Rex Orange County - Corduroy Dreams",
+  "item.friendsforgermod.cre8ives_boom_box": "Cre8ive's Boom Box",
+  "tooltip.friendsforgermod.cre8ives_boox_box.tooltip": "Plays Bangers only",
+
 
   "item.friendsforgermod.cat_zoe": "Lex's Cat Zoe",
+
+  "item.friendsforgermod.web_gun": "Sticky Blicky",
+  "tooltip.friendsforgermod.web_gun.tooltip": "Uses Net Ammo, Roots Entity (0:02)",
+
+  "item.friendsforgermod.net_ammo": "Net Ammo",
+  "item.friendsforgermod.silk": "Silk",
 
 
   "item.friendsforgermod.lonsdaleite": "Lonsdaleite",
@@ -23,10 +33,10 @@
   "tooltip.friendsforgermod.mod_armor_item.tooltip": "Full Set: Speed I & Health Boost I",
 
   "item.friendsforgermod.energy_drink": "Energy Drink",
-  "tooltip.friendsforgermod.energy_drink.tooltip": "Gives Speed III and Jump Boost for 20 seconds",
+  "tooltip.friendsforgermod.energy_drink.tooltip": "Speed III and Jump Boost (0:20)",
 
   "block.friendsforgermod.medicine_block": "Medicine Block",
-  "tooltip.friendsforgermod.medicine_block.tooltip": "On Right Click, gives Regen V for 10 seconds",
+  "tooltip.friendsforgermod.medicine_block.tooltip": "On Use, Regen V (0:10)",
 
   "block.friendsforgermod.cheese_block": "Block of Cheese",
   "block.friendsforgermod.gradient_block": "Gradient Block",
@@ -41,6 +51,7 @@
   "sounds.friendsforgermod.medicine_block_hit": "Medicine Block hit",
   "sounds.friendsforgermod.medicine_block_place": "Medicine Block place",
   "sounds.friendsforgermod.medicine_block_step": "Medicine Block step",
+  "sounds.friendsforgermod.web_gun_hit": "Sticky Blicky fired!",
 
   "itemgroup.friends_items": "Friends Forger Items"
 }

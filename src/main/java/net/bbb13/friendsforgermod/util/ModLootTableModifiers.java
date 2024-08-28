@@ -14,12 +14,26 @@ import net.minecraft.util.Identifier;
 public class ModLootTableModifiers {
     public static final Identifier CREEPER_ID = Identifier.of("minecraft","entities/creeper");
 
+    public static final Identifier SPIDER_ID = Identifier.of("minecraft", "entities/spider");
+
     public static void modifyLootTables() {
         LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
             if (source.isBuiltin() && CREEPER_ID.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1.0F))
                         .with(ItemEntry.builder(ModBlocks.CHEESE_BLOCK)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0F, 1.0F)))
+                                .conditionally(RandomChanceLootCondition.builder(1.0f)));
+
+                tableBuilder.pool(poolBuilder);
+            }
+        });
+
+        LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
+            if (source.isBuiltin() && SPIDER_ID.equals(key.getValue())) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1.0F))
+                        .with(ItemEntry.builder(ModItems.SILK)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0F, 1.0F)))
                                 .conditionally(RandomChanceLootCondition.builder(1.0f)));
 

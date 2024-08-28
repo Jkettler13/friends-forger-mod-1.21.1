@@ -1,5 +1,6 @@
 package net.bbb13.friendsforgermod.datagen;
 
+import com.ibm.icu.text.Normalizer2;
 import net.bbb13.friendsforgermod.block.ModBlocks;
 import net.bbb13.friendsforgermod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -34,6 +35,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ENERGY_DRINK, Models.GENERATED);
         itemModelGenerator.register(ModItems.CRE8IVES_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.MARKEE_SONG_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRE8VIES_BOOM_BOX, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.WEB_GUN, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SILK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NET_AMMO, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.LONSDALEITE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.CAT_ZOE, Models.GENERATED);

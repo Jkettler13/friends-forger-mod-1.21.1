@@ -21,8 +21,13 @@ public class ModItemGroups {
                         entries.add(ModItems.JONATHANS_RUBIKS_CUBE);
                         entries.add(ModItems.ENERGY_DRINK);
                         entries.add(ModItems.CRE8IVES_DISC);
+                        entries.add(ModItems.CRE8VIES_BOOM_BOX);
                         entries.add(ModItems.MARKEE_SONG_MUSIC_DISC);
                         entries.add(ModItems.CAT_ZOE);
+
+                        entries.add(ModItems.WEB_GUN);
+                        entries.add(ModItems.SILK);
+                        entries.add(ModItems.NET_AMMO);
 
                         entries.add(ModItems.LONSDALEITE);
                         entries.add(ModItems.LONSDALEITE_SWORD);

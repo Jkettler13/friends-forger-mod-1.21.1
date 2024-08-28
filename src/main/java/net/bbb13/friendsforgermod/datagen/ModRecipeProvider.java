@@ -169,5 +169,42 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
                 .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_BOOTS)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.WEB_GUN, 1)
+                .pattern(" S ")
+                .pattern("GLG")
+                .input('S', Items.SPIDER_EYE)
+                .input('G', Items.GOLD_BLOCK)
+                .input('L', Items.CROSSBOW)
+                .criterion(hasItem(Items.SPIDER_EYE),conditionsFromItem(Items.SPIDER_EYE))
+                .criterion(hasItem(Items.GOLD_BLOCK),conditionsFromItem(Items.GOLD_BLOCK))
+                .criterion(hasItem(Items.CROSSBOW),conditionsFromItem(Items.CROSSBOW))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.WEB_GUN)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.NET_AMMO, 3)
+                .pattern(" T ")
+                .pattern("#S#")
+                .pattern(" T ")
+                .input('T', Items.STRING)
+                .input('#', Items.STICK)
+                .input('S', ModItems.SILK)
+                .criterion(hasItem(Items.STRING),conditionsFromItem(Items.STRING))
+                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
+                .criterion(hasItem(ModItems.SILK),conditionsFromItem(ModItems.SILK))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.NET_AMMO)));
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CRE8VIES_BOOM_BOX, 1)
+                .pattern(" B ")
+                .pattern("IJI")
+                .pattern(" C ")
+                .input('B', Items.BLAZE_ROD)
+                .input('I', Items.IRON_BLOCK)
+                .input('J', Items.JUKEBOX)
+                .input('C', Items.GRAY_CARPET)
+                .criterion(hasItem(Items.BLAZE_ROD),conditionsFromItem(Items.BLAZE_ROD))
+                .criterion(hasItem(Items.IRON_BLOCK),conditionsFromItem(Items.IRON_BLOCK))
+                .criterion(hasItem(Items.JUKEBOX),conditionsFromItem(Items.JUKEBOX))
+                .criterion(hasItem(Items.GRAY_CARPET),conditionsFromItem(Items.GRAY_CARPET))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.CRE8VIES_BOOM_BOX)));
     }
 }

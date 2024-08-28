@@ -34,5 +34,11 @@
     "sounds": [
       "friendsforgermod:markee_song_music_disc"
     ]
+  },
+  "web_gun_hit": {
+    "subtitle": "sounds.friendsforgermod.web_gun_hit",
+    "sounds": [
+      "friendsforgermod:web_gun_hit"
+    ]
   }
 }
