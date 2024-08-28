@@ -22,8 +22,13 @@ public class ModItems {
     public static final Item CAT_ZOE = registerItem("cat_zoe", new Item( new Item.Settings()));
 
     public static final Item WEB_GUN = registerItem("web_gun", new WebGunItem(new Item.Settings().maxCount(1)));
-    public static final Item SILK = registerItem("silk", new Item(new Item.Settings()));
     public static final Item NET_AMMO = registerItem("net_ammo", new NetAmmoItem(new Item.Settings()));
+
+    public static final Item SILK = registerItem("silk", new Item(new Item.Settings()));
+    public static final Item SILK_HELMET = registerItem("silk_helmet", new ModArmorItem(ModArmorMaterial.SILK, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(25))));
+    public static final Item SILK_CHESTPLATE = registerItem("silk_chestplate", new ModArmorItem(ModArmorMaterial.SILK, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(25))));
+    public static final Item SILK_LEGGINGS = registerItem("silk_leggings", new ModArmorItem(ModArmorMaterial.SILK, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(25))));
+    public static final Item SILK_BOOTS = registerItem("silk_boots", new ModArmorItem(ModArmorMaterial.SILK, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(25))));
 
 
     public static final Item LONSDALEITE = registerItem("lonsdaleite", new Item(new Item.Settings()));
@@ -58,6 +63,11 @@ public class ModItems {
         entries.add(LONSDALEITE_LEGGINGS);
         entries.add(LONSDALEITE_BOOTS);
         entries.add(WEB_GUN);
+        entries.add(SILK_HELMET);
+        entries.add(SILK_CHESTPLATE);
+        entries.add(SILK_LEGGINGS);
+        entries.add(SILK_BOOTS);
+
     }
 
     private static Item registerItem(String name, Item item) {

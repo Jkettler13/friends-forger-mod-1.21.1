@@ -206,5 +206,38 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.JUKEBOX),conditionsFromItem(Items.JUKEBOX))
                 .criterion(hasItem(Items.GRAY_CARPET),conditionsFromItem(Items.GRAY_CARPET))
                 .offerTo(exporter, Identifier.of(getRecipeName(ModItems.CRE8VIES_BOOM_BOX)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SILK_HELMET, 1)
+                .pattern("LLL")
+                .pattern("L L")
+                .input('L', ModItems.SILK)
+                .criterion(hasItem(ModItems.SILK),conditionsFromItem(ModItems.SILK))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.SILK_HELMET)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SILK_CHESTPLATE, 1)
+                .pattern("L L")
+                .pattern("LLL")
+                .pattern("LLL")
+                .input('L', ModItems.SILK)
+                .criterion(hasItem(ModItems.SILK),conditionsFromItem(ModItems.SILK))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.SILK_CHESTPLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SILK_LEGGINGS, 1)
+                .pattern("LLL")
+                .pattern("L L")
+                .pattern("L L")
+                .input('L', ModItems.SILK)
+                .criterion(hasItem(ModItems.SILK),conditionsFromItem(ModItems.SILK))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.SILK_LEGGINGS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SILK_BOOTS, 1)
+                .pattern("E E")
+                .pattern("L L")
+                .input('E', Items.SPIDER_EYE)
+                .input('L', ModItems.SILK)
+                .criterion(hasItem(ModItems.SILK),conditionsFromItem(ModItems.SILK))
+                .criterion(hasItem(Items.SPIDER_EYE),conditionsFromItem(Items.SPIDER_EYE))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.SILK_BOOTS)));
+
     }
 }

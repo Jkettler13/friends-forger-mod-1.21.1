@@ -26,8 +26,12 @@ public class ModItemGroups {
                         entries.add(ModItems.CAT_ZOE);
 
                         entries.add(ModItems.WEB_GUN);
-                        entries.add(ModItems.SILK);
                         entries.add(ModItems.NET_AMMO);
+                        entries.add(ModItems.SILK);
+                        entries.add(ModItems.SILK_HELMET);
+                        entries.add(ModItems.SILK_CHESTPLATE);
+                        entries.add(ModItems.SILK_LEGGINGS);
+                        entries.add(ModItems.SILK_BOOTS);
 
                         entries.add(ModItems.LONSDALEITE);
                         entries.add(ModItems.LONSDALEITE_SWORD);

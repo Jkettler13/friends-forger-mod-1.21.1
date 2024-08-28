@@ -17,7 +17,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
-                .add(ModItems.LONSDALEITE_HELMET, ModItems.LONSDALEITE_CHESTPLATE, ModItems.LONSDALEITE_LEGGINGS, ModItems.LONSDALEITE_BOOTS);
+                .add(ModItems.LONSDALEITE_HELMET, ModItems.LONSDALEITE_CHESTPLATE, ModItems.LONSDALEITE_LEGGINGS, ModItems.LONSDALEITE_BOOTS,
+                        ModItems.SILK_HELMET, ModItems.SILK_CHESTPLATE, ModItems.SILK_LEGGINGS, ModItems.SILK_BOOTS);
+
         getOrCreateTagBuilder(ItemTags.AXES).add(ModItems.LONSDALEITE_AXE);
         getOrCreateTagBuilder(ItemTags.PICKAXES).add(ModItems.LONSDALEITE_PICKAXE);
         getOrCreateTagBuilder(ItemTags.SHOVELS).add(ModItems.LONSDALEITE_SHOVEL);

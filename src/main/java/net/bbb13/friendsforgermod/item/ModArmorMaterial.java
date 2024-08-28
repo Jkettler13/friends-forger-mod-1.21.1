@@ -25,6 +25,15 @@ public class ModArmorMaterial {
         map.put(ArmorItem.Type.BODY, 11);
     }), 30, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 0.0F, () -> Ingredient.ofItems(ModItems.LONSDALEITE));
 
+    public static final RegistryEntry<ArmorMaterial> SILK = register("silk", Util.make(new EnumMap<ArmorItem.Type, Integer>(ArmorItem.Type.class), map -> {
+        map.put(ArmorItem.Type.BOOTS, 2);
+        map.put(ArmorItem.Type.LEGGINGS, 5);
+        map.put(ArmorItem.Type.CHESTPLATE, 6);
+        map.put(ArmorItem.Type.HELMET, 2);
+        map.put(ArmorItem.Type.BODY, 5);
+    }), 9, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> Ingredient.ofItems(ModItems.SILK));
+
+
     private static RegistryEntry<ArmorMaterial> register(
             String id,
             EnumMap<ArmorItem.Type, Integer> defense,

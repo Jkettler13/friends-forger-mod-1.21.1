@@ -56,5 +56,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.LONSDALEITE_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.LONSDALEITE_BOOTS);
 
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SILK_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SILK_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SILK_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SILK_BOOTS);
+
     }
 }

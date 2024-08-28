@@ -14,10 +14,14 @@
 
   "item.friendsforgermod.web_gun": "Sticky Blicky",
   "tooltip.friendsforgermod.web_gun.tooltip": "Uses Net Ammo, Roots Entity (0:02)",
-
   "item.friendsforgermod.net_ammo": "Net Ammo",
-  "item.friendsforgermod.silk": "Silk",
 
+  "item.friendsforgermod.silk": "Silk",
+  "item.friendsforgermod.silk_helmet": "Silk Helmet",
+  "item.friendsforgermod.silk_chestplate": "Silk Chestplate",
+  "item.friendsforgermod.silk_leggings": "Silk Leggings",
+  "item.friendsforgermod.silk_boots": "Silk Boots",
+  "tooltip.friendsforgermod.mod_armor_item2.tooltip": "Full Set: Friendly to Spiders? Climbs Walls?",
 
   "item.friendsforgermod.lonsdaleite": "Lonsdaleite",
   "item.friendsforgermod.lonsdaleite_sword": "Lonsdaleite Sword",
