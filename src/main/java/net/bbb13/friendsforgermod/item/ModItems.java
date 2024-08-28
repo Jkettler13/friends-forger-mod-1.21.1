@@ -1,10 +1,7 @@
 package net.bbb13.friendsforgermod.item;
 
 import net.bbb13.friendsforgermod.FriendsForgerMod;
-import net.bbb13.friendsforgermod.item.custom.BoomBoxItem;
-import net.bbb13.friendsforgermod.item.custom.DrinkItem;
-import net.bbb13.friendsforgermod.item.custom.ModArmorItem;
-import net.bbb13.friendsforgermod.item.custom.WebGunItem;
+import net.bbb13.friendsforgermod.item.custom.*;
 import net.bbb13.friendsforgermod.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -26,7 +23,7 @@ public class ModItems {
 
     public static final Item WEB_GUN = registerItem("web_gun", new WebGunItem(new Item.Settings().maxCount(1)));
     public static final Item SILK = registerItem("silk", new Item(new Item.Settings()));
-    public static final Item NET_AMMO = registerItem("net_ammo", new Item(new Item.Settings()));
+    public static final Item NET_AMMO = registerItem("net_ammo", new NetAmmoItem(new Item.Settings()));
 
 
     public static final Item LONSDALEITE = registerItem("lonsdaleite", new Item(new Item.Settings()));

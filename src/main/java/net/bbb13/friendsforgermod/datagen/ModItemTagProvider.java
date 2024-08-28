@@ -27,5 +27,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.CREEPER_DROP_MUSIC_DISCS)
                 .add(ModItems.MARKEE_SONG_MUSIC_DISC);
 
+        getOrCreateTagBuilder(ItemTags.ARROWS)
+                .add(ModItems.NET_AMMO);
+
     }
 }
