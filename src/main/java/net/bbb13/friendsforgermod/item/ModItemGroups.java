@@ -20,10 +20,15 @@ public class ModItemGroups {
                         entries.add(ModItems.JONATHANS_BLACK_BELT);
                         entries.add(ModItems.JONATHANS_RUBIKS_CUBE);
                         entries.add(ModItems.ENERGY_DRINK);
+
+                        entries.add(ModItems.SLADERS_CONTROLLER);
+
                         entries.add(ModItems.CRE8IVES_DISC);
                         entries.add(ModItems.CRE8IVES_SKATEBOARD);
                         entries.add(ModItems.CRE8VIES_BOOM_BOX);
                         entries.add(ModItems.MARKEE_SONG_MUSIC_DISC);
+                        entries.add(ModBlocks.MEDIA_BLOCK);
+
                         entries.add(ModItems.CAT_ZOE);
 
                         entries.add(ModItems.WEB_GUN);
@@ -34,6 +39,7 @@ public class ModItemGroups {
                         entries.add(ModItems.SILK_LEGGINGS);
                         entries.add(ModItems.SILK_BOOTS);
 
+                        entries.add(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE);
                         entries.add(ModItems.LONSDALEITE);
                         entries.add(ModItems.LONSDALEITE_SWORD);
                         entries.add(ModItems.LONSDALEITE_PICKAXE);
@@ -45,6 +51,12 @@ public class ModItemGroups {
                         entries.add(ModItems.LONSDALEITE_CHESTPLATE);
                         entries.add(ModItems.LONSDALEITE_LEGGINGS);
                         entries.add(ModItems.LONSDALEITE_BOOTS);
+
+                        entries.add(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE);
+                        entries.add(ModItems.EMERALD_HELMET);
+                        entries.add(ModItems.EMERALD_CHESTPLATE);
+                        entries.add(ModItems.EMERALD_LEGGINGS);
+                        entries.add(ModItems.EMERALD_BOOTS);
 
                         entries.add(ModBlocks.MEDICINE_BLOCK);
                         entries.add(ModBlocks.CHEESE_BLOCK);
