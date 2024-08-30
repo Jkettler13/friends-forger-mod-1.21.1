@@ -91,57 +91,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         getWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MARBLE_WALL, Ingredient.ofItems(ModBlocks.MARBLE_BLOCK))
                 .criterion(hasItem(ModBlocks.MARBLE_BLOCK),conditionsFromItem(ModBlocks.MARBLE_BLOCK))
                 .offerTo(exporter, Identifier.of(getRecipeName(ModBlocks.MARBLE_WALL)));
-/*
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.LONSDALEITE_SWORD, 1)
-                .pattern("L")
-                .pattern("L")
-                .pattern("S")
-                .input('L', ModItems.LONSDALEITE)
-                .input('S', Items.STICK)
-                .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
-                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
-                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_SWORD)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.LONSDALEITE_PICKAXE, 1)
-                .pattern("LLL")
-                .pattern(" S ")
-                .pattern(" S ")
-                .input('L', ModItems.LONSDALEITE)
-                .input('S', Items.STICK)
-                .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
-                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
-                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_PICKAXE)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.LONSDALEITE_AXE, 1)
-                .pattern("LL")
-                .pattern("LS")
-                .pattern(" S")
-                .input('L', ModItems.LONSDALEITE)
-                .input('S', Items.STICK)
-                .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
-                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
-                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_AXE)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.LONSDALEITE_SHOVEL, 1)
-                .pattern("L")
-                .pattern("S")
-                .pattern("S")
-                .input('L', ModItems.LONSDALEITE)
-                .input('S', Items.STICK)
-                .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
-                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
-                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_SHOVEL)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.LONSDALEITE_HOE, 1)
-                .pattern("LL")
-                .pattern(" S")
-                .pattern(" S")
-                .input('L', ModItems.LONSDALEITE)
-                .input('S', Items.STICK)
-                .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
-                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
-                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_HOE)));
-*/
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.WEB_GUN, 1)
                 .pattern(" S ")
                 .pattern("GLG")
