@@ -23,6 +23,8 @@ public class ModArmorItem extends ArmorItem {
 
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
+                    .put(ModArmorMaterial.EMERALD.value(), new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, -1, 4,
+                            false, false, true))
                     .put(ModArmorMaterial.LONSDALEITE.value(), new StatusEffectInstance(StatusEffects.SPEED, -1, 0,
                             false, false, true))
                     .put(ModArmorMaterial.SILK.value(), new StatusEffectInstance(StatusEffects.SLOW_FALLING , -1, 0,
@@ -103,10 +105,13 @@ public class ModArmorItem extends ArmorItem {
     public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
         ArmorItem armorItem = (ArmorItem) stack.getItem();
         if(armorItem.getMaterial() == ModArmorMaterial.LONSDALEITE) {
-            tooltip.add(Text.translatable("tooltip.friendsforgermod.mod_armor_item.tooltip").formatted(Formatting.AQUA));
+            tooltip.add(Text.translatable("tooltip.friendsforgermod.mod_armor_item.tooltip").withColor(14215403));
         }
         if(armorItem.getMaterial() == ModArmorMaterial.SILK) {
-            tooltip.add(Text.translatable("tooltip.friendsforgermod.mod_armor_item2.tooltip").formatted(Formatting.AQUA));
+            tooltip.add(Text.translatable("tooltip.friendsforgermod.mod_armor_item2.tooltip").withColor(14989515));
+        }
+        if(armorItem.getMaterial() == ModArmorMaterial.EMERALD) {
+            tooltip.add(Text.translatable("tooltip.friendsforgermod.mod_armor_item3.tooltip").formatted(Formatting.GREEN));
         }
 
     }

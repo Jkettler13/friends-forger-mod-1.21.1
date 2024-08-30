@@ -1,6 +1,16 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
+    "has_diamond_axe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:diamond_axe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_lonsdaleite": {
       "conditions": {
         "items": [
@@ -11,11 +21,11 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_stick": {
+    "has_lonsdaleite_upgrade_smithing_template": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:stick"
+            "items": "friendsforgermod:lonsdaleite_upgrade_smithing_template"
           }
         ]
       },
@@ -31,8 +41,9 @@
   "requirements": [
     [
       "has_the_recipe",
+      "has_lonsdaleite_upgrade_smithing_template",
       "has_lonsdaleite",
-      "has_stick"
+      "has_diamond_axe"
     ]
   ],
   "rewards": {

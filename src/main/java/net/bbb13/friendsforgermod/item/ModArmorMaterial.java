@@ -3,6 +3,7 @@ package net.bbb13.friendsforgermod.item;
 import net.bbb13.friendsforgermod.FriendsForgerMod;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -33,6 +34,13 @@ public class ModArmorMaterial {
         map.put(ArmorItem.Type.BODY, 5);
     }), 9, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> Ingredient.ofItems(ModItems.SILK));
 
+    public static final RegistryEntry<ArmorMaterial> EMERALD = register("emerald", Util.make(new EnumMap<ArmorItem.Type, Integer>(ArmorItem.Type.class), map -> {
+        map.put(ArmorItem.Type.BOOTS, 2);
+        map.put(ArmorItem.Type.LEGGINGS, 6);
+        map.put(ArmorItem.Type.CHESTPLATE, 7);
+        map.put(ArmorItem.Type.HELMET, 2);
+        map.put(ArmorItem.Type.BODY, 8);
+    }), 50, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.0F, 0.0F, () -> Ingredient.ofItems(Items.EMERALD));
 
     private static RegistryEntry<ArmorMaterial> register(
             String id,

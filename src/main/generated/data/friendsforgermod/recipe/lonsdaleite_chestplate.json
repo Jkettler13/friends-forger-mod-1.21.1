@@ -1,18 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "key": {
-    "L": {
-      "item": "friendsforgermod:lonsdaleite"
-    }
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "friendsforgermod:lonsdaleite"
   },
-  "pattern": [
-    "L L",
-    "LLL",
-    "LLL"
-  ],
+  "base": {
+    "item": "minecraft:diamond_chestplate"
+  },
   "result": {
     "count": 1,
     "id": "friendsforgermod:lonsdaleite_chestplate"
+  },
+  "template": {
+    "item": "friendsforgermod:lonsdaleite_upgrade_smithing_template"
   }
 }
