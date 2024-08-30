@@ -22,7 +22,8 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.copy(Blocks.SCULK)));
     public static final Block MARBLE_BLOCK = registerBlock("marble_block",
             new Block(AbstractBlock.Settings.copy(Blocks.CALCITE).requiresTool()));
-
+    public static final Block MEDIA_BLOCK = registerBlock("media_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.JUKEBOX)));
 
     public static final Block MARBLE_STAIRS = registerBlock("marble_stairs",
             new StairsBlock(ModBlocks.MARBLE_BLOCK.getDefaultState(), AbstractBlock.Settings.copy(Blocks.CALCITE).requiresTool()));
