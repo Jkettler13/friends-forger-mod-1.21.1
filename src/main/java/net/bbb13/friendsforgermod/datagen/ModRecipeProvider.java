@@ -7,10 +7,13 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.SmithingTransformRecipeJsonBuilder;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
@@ -88,7 +91,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         getWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MARBLE_WALL, Ingredient.ofItems(ModBlocks.MARBLE_BLOCK))
                 .criterion(hasItem(ModBlocks.MARBLE_BLOCK),conditionsFromItem(ModBlocks.MARBLE_BLOCK))
                 .offerTo(exporter, Identifier.of(getRecipeName(ModBlocks.MARBLE_WALL)));
-
+/*
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.LONSDALEITE_SWORD, 1)
                 .pattern("L")
                 .pattern("L")
@@ -138,37 +141,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
                 .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
                 .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_HOE)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.LONSDALEITE_HELMET, 1)
-                .pattern("LLL")
-                .pattern("L L")
-                .input('L', ModItems.LONSDALEITE)
-                .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
-                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_HELMET)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.LONSDALEITE_CHESTPLATE, 1)
-                .pattern("L L")
-                .pattern("LLL")
-                .pattern("LLL")
-                .input('L', ModItems.LONSDALEITE)
-                .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
-                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_CHESTPLATE)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.LONSDALEITE_LEGGINGS, 1)
-                .pattern("LLL")
-                .pattern("L L")
-                .pattern("L L")
-                .input('L', ModItems.LONSDALEITE)
-                .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
-                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_LEGGINGS)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.LONSDALEITE_BOOTS, 1)
-                .pattern("L L")
-                .pattern("L L")
-                .input('L', ModItems.LONSDALEITE)
-                .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
-                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_BOOTS)));
-
+*/
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.WEB_GUN, 1)
                 .pattern(" S ")
                 .pattern("GLG")
@@ -248,6 +221,157 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.IRON_INGOT),conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(exporter, Identifier.of(getRecipeName(ModItems.CRE8IVES_SKATEBOARD)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE, 2)
+                .pattern("DTD")
+                .pattern("DSD")
+                .pattern("DDD")
+                .input('D', Items.DIAMOND)
+                .input('T', ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE)
+                .input('S', Items.DEEPSLATE)
+                .criterion(hasItem(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE),conditionsFromItem(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE))
+                .criterion(hasItem(Items.DIAMOND),conditionsFromItem(Items.DIAMOND))
+                .criterion(hasItem(Items.DEEPSLATE),conditionsFromItem(Items.DEEPSLATE))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE, 2)
+                .pattern("ETE")
+                .pattern("EBE")
+                .pattern("EEE")
+                .input('E', Items.EMERALD_BLOCK)
+                .input('T', ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE)
+                .input('B', Items.BELL)
+                .criterion(hasItem(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE),conditionsFromItem(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE))
+                .criterion(hasItem(Items.EMERALD_BLOCK),conditionsFromItem(Items.EMERALD_BLOCK))
+                .criterion(hasItem(Items.BELL),conditionsFromItem(Items.BELL))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE)));
+
+        //lonsdaleite armor smithing
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(Items.DIAMOND_HELMET),
+                        Ingredient.ofItems(ModItems.LONSDALEITE),
+                        RecipeCategory.COMBAT,
+                        new ItemStack(ModItems.LONSDALEITE_HELMET,1).getItem())
+                .criterion(hasItem(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE),conditionsFromItem(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE))
+                .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
+                .criterion(hasItem(Items.DIAMOND_HELMET),conditionsFromItem(Items.DIAMOND_HELMET))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_HELMET)));
+
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(Items.DIAMOND_CHESTPLATE),
+                        Ingredient.ofItems(ModItems.LONSDALEITE),
+                        RecipeCategory.COMBAT,
+                        new ItemStack(ModItems.LONSDALEITE_CHESTPLATE,1).getItem())
+                .criterion(hasItem(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE),conditionsFromItem(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE))
+                .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
+                .criterion(hasItem(Items.DIAMOND_CHESTPLATE),conditionsFromItem(Items.DIAMOND_CHESTPLATE))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_CHESTPLATE)));
+
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(Items.DIAMOND_LEGGINGS),
+                        Ingredient.ofItems(ModItems.LONSDALEITE),
+                        RecipeCategory.COMBAT,
+                        new ItemStack(ModItems.LONSDALEITE_LEGGINGS,1).getItem())
+                .criterion(hasItem(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE),conditionsFromItem(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE))
+                .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
+                .criterion(hasItem(Items.DIAMOND_LEGGINGS),conditionsFromItem(Items.DIAMOND_LEGGINGS))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_LEGGINGS)));
+
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(Items.DIAMOND_BOOTS),
+                        Ingredient.ofItems(ModItems.LONSDALEITE),
+                        RecipeCategory.COMBAT,
+                        new ItemStack(ModItems.LONSDALEITE_BOOTS,1).getItem())
+                .criterion(hasItem(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE),conditionsFromItem(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE))
+                .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
+                .criterion(hasItem(Items.DIAMOND_BOOTS),conditionsFromItem(Items.DIAMOND_BOOTS))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_BOOTS)));
+
+        //lonsdaleite tools smithing
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(Items.DIAMOND_SWORD),
+                        Ingredient.ofItems(ModItems.LONSDALEITE),
+                        RecipeCategory.TOOLS,
+                        new ItemStack(ModItems.LONSDALEITE_SWORD,1).getItem())
+                .criterion(hasItem(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE),conditionsFromItem(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE))
+                .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
+                .criterion(hasItem(Items.DIAMOND_SWORD),conditionsFromItem(Items.DIAMOND_SWORD))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_SWORD)));
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(Items.DIAMOND_AXE),
+                        Ingredient.ofItems(ModItems.LONSDALEITE),
+                        RecipeCategory.TOOLS,
+                        new ItemStack(ModItems.LONSDALEITE_AXE,1).getItem())
+                .criterion(hasItem(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE),conditionsFromItem(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE))
+                .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
+                .criterion(hasItem(Items.DIAMOND_AXE),conditionsFromItem(Items.DIAMOND_AXE))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_AXE)));
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(Items.DIAMOND_PICKAXE),
+                        Ingredient.ofItems(ModItems.LONSDALEITE),
+                        RecipeCategory.TOOLS,
+                        new ItemStack(ModItems.LONSDALEITE_PICKAXE,1).getItem())
+                .criterion(hasItem(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE),conditionsFromItem(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE))
+                .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
+                .criterion(hasItem(Items.DIAMOND_PICKAXE),conditionsFromItem(Items.DIAMOND_PICKAXE))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_PICKAXE)));
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(Items.DIAMOND_SHOVEL),
+                        Ingredient.ofItems(ModItems.LONSDALEITE),
+                        RecipeCategory.TOOLS,
+                        new ItemStack(ModItems.LONSDALEITE_SHOVEL,1).getItem())
+                .criterion(hasItem(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE),conditionsFromItem(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE))
+                .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
+                .criterion(hasItem(Items.DIAMOND_SHOVEL),conditionsFromItem(Items.DIAMOND_SHOVEL))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_SHOVEL)));
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(Items.DIAMOND_HOE),
+                        Ingredient.ofItems(ModItems.LONSDALEITE),
+                        RecipeCategory.TOOLS,
+                        new ItemStack(ModItems.LONSDALEITE_HOE,1).getItem())
+                .criterion(hasItem(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE),conditionsFromItem(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE))
+                .criterion(hasItem(ModItems.LONSDALEITE),conditionsFromItem(ModItems.LONSDALEITE))
+                .criterion(hasItem(Items.DIAMOND_HOE),conditionsFromItem(Items.DIAMOND_HOE))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.LONSDALEITE_HOE)));
+
+        //emerald armor smithing
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(Items.GOLDEN_HELMET),
+                        Ingredient.ofItems(Items.EMERALD),
+                        RecipeCategory.COMBAT,
+                        new ItemStack(ModItems.EMERALD_HELMET,1).getItem())
+                .criterion(hasItem(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE),conditionsFromItem(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE))
+                .criterion(hasItem(Items.EMERALD),conditionsFromItem(Items.EMERALD))
+                .criterion(hasItem(Items.GOLDEN_HELMET),conditionsFromItem(Items.GOLDEN_HELMET))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.EMERALD_HELMET)));
+
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(Items.GOLDEN_CHESTPLATE),
+                        Ingredient.ofItems(Items.EMERALD),
+                        RecipeCategory.COMBAT,
+                        new ItemStack(ModItems.EMERALD_CHESTPLATE,1).getItem())
+                .criterion(hasItem(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE),conditionsFromItem(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE))
+                .criterion(hasItem(Items.EMERALD),conditionsFromItem(Items.EMERALD))
+                .criterion(hasItem(Items.GOLDEN_CHESTPLATE),conditionsFromItem(Items.GOLDEN_CHESTPLATE))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.EMERALD_CHESTPLATE)));
+
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(Items.GOLDEN_LEGGINGS),
+                        Ingredient.ofItems(Items.EMERALD),
+                        RecipeCategory.COMBAT,
+                        new ItemStack(ModItems.EMERALD_LEGGINGS,1).getItem())
+                .criterion(hasItem(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE),conditionsFromItem(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE))
+                .criterion(hasItem(Items.EMERALD),conditionsFromItem(Items.EMERALD))
+                .criterion(hasItem(Items.GOLDEN_LEGGINGS),conditionsFromItem(Items.GOLDEN_LEGGINGS))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.EMERALD_LEGGINGS)));
+
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(Items.GOLDEN_BOOTS),
+                        Ingredient.ofItems(Items.EMERALD),
+                        RecipeCategory.COMBAT,
+                        new ItemStack(ModItems.EMERALD_BOOTS,1).getItem())
+                .criterion(hasItem(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE),conditionsFromItem(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE))
+                .criterion(hasItem(Items.EMERALD),conditionsFromItem(Items.EMERALD))
+                .criterion(hasItem(Items.GOLDEN_BOOTS),conditionsFromItem(Items.GOLDEN_BOOTS))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.EMERALD_BOOTS)));
     }
 }

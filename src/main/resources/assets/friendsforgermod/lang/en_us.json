@@ -11,7 +11,11 @@
   "jukebox_song.friendsforgermod.markee_song_music_disc": "Rex Orange County - Corduroy Dreams",
   "item.friendsforgermod.cre8ives_boom_box": "Cre8ive's Boom Box",
   "tooltip.friendsforgermod.cre8ives_boom_box.tooltip": "Plays Bangers only",
+  "entity.minecraft.villager.hipster": "What Up Dude? Hipster",
 
+
+  "item.friendsforgermod.sladers_controller": "S1ader's Contro11er",
+  "tooltip.friendsforgermod.sladers_controller.tooltip": "On Use, change spawner contents, village trades & chest loot",
 
   "item.friendsforgermod.cat_zoe": "Lex's Cat Zoe",
 
@@ -26,6 +30,14 @@
   "item.friendsforgermod.silk_boots": "Silk Boots",
   "tooltip.friendsforgermod.mod_armor_item2.tooltip": "Full Set: Friendly to Spiders? Climbs Walls?",
 
+
+  "item.friendsforgermod.lonsdaleite_upgrade_smithing_template": "Smithing Template",
+  "item.friendsforgermod.smithing_template.lonsdaleite_upgrade.additions_slot_description": "Add Lonsdaleite",
+  "item.friendsforgermod.smithing_template.lonsdaleite_upgrade.applies_to": "Diamond Equipment",
+  "item.friendsforgermod.smithing_template.lonsdaleite_upgrade.base_slot_description": "Add diamond armor, weapon, or tool",
+  "item.friendsforgermod.smithing_template.lonsdaleite_upgrade.ingredients": "Lonsdaleite",
+  "upgrade.friendsforgermod.lonsdaleite_upgrade": "Lonsdaleite Upgrade",
+
   "item.friendsforgermod.lonsdaleite": "Lonsdaleite",
   "item.friendsforgermod.lonsdaleite_sword": "Lonsdaleite Sword",
   "item.friendsforgermod.lonsdaleite_pickaxe": "Lonsdaleite Pickaxe",
@@ -39,12 +51,28 @@
   "item.friendsforgermod.lonsdaleite_boots": "Lonsdaleite Boots",
   "tooltip.friendsforgermod.mod_armor_item.tooltip": "Full Set: Speed I & Health Boost I",
 
+
+  "item.friendsforgermod.emerald_upgrade_smithing_template": "Smithing Template",
+  "item.friendsforgermod.smithing_template.emerald_upgrade.additions_slot_description": "Add Emerald",
+  "item.friendsforgermod.smithing_template.emerald_upgrade.applies_to": "Gold Armor",
+  "item.friendsforgermod.smithing_template.emerald_upgrade.base_slot_description": "Add gold armor",
+  "item.friendsforgermod.smithing_template.emerald_upgrade.ingredients": "Emerald",
+  "upgrade.friendsforgermod.emerald_upgrade": "Emerald Upgrade",
+
+  "item.friendsforgermod.emerald_helmet": "Emerald Helmet",
+  "item.friendsforgermod.emerald_chestplate": "Emerald Chestplate",
+  "item.friendsforgermod.emerald_leggings": "Emerald Leggings",
+  "item.friendsforgermod.emerald_boots": "Emerald Boots",
+  "tooltip.friendsforgermod.mod_armor_item3.tooltip": "Full Set: Hero of the Village V",
+
+
   "item.friendsforgermod.energy_drink": "Energy Drink",
   "tooltip.friendsforgermod.energy_drink.tooltip": "Speed III and Jump Boost (0:20)",
 
   "block.friendsforgermod.medicine_block": "Medicine Block",
   "tooltip.friendsforgermod.medicine_block.tooltip": "On Use, Regen V (0:10)",
 
+  "block.friendsforgermod.media_block": "Multimedia Table",
   "block.friendsforgermod.cheese_block": "Block of Cheese",
   "block.friendsforgermod.gradient_block": "Gradient Block",
 

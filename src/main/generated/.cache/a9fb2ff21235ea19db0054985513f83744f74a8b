@@ -1,9 +1,9 @@
-// 1.21.1	2024-08-28T09:01:15.9766765	Friends Forger Mod/Tags for minecraft:item
-aca66471e00165280a4743c72c9180756f62746b data\minecraft\tags\item\trimmable_armor.json
-aca66471e00165280a4743c72c9180756f62746b data\minecraft\tags\item\enchantable\armor.json
+// 1.21.1	2024-08-30T05:30:06.0240374	Friends Forger Mod/Tags for minecraft:item
+8f0b9182f5e6b6323be2a22860c51bbd1d0777f4 data\minecraft\tags\item\trimmable_armor.json
+8f0b9182f5e6b6323be2a22860c51bbd1d0777f4 data\minecraft\tags\item\enchantable\armor.json
 87f74ee3db7dbe6700e4bea645ff3982010b5d20 data\minecraft\tags\item\axes.json
-a3c926656c7fe6870f502516ddfb4bce0e619d4d data\minecraft\tags\item\swords.json
 7a9bff7ff34a30067ea2114ecab185a596a0e558 data\minecraft\tags\item\creeper_drop_music_discs.json
+a3c926656c7fe6870f502516ddfb4bce0e619d4d data\minecraft\tags\item\swords.json
 2fc2ca4c0b2f569ba5123d6863bbf2f3e5d46406 data\minecraft\tags\item\hoes.json
 366037520e83281ad8c08e2ce808dac08da70b54 data\minecraft\tags\item\shovels.json
 2965155a36b503f9d97721278f1a677c558ff302 data\minecraft\tags\item\pickaxes.json

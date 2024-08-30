@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bell": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:bell"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_emerald_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:emerald_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_emerald_upgrade_smithing_template": {
+      "conditions": {
+        "items": [
+          {
+            "items": "friendsforgermod:emerald_upgrade_smithing_template"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:emerald_upgrade_smithing_template"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_emerald_upgrade_smithing_template",
+      "has_emerald_block",
+      "has_bell"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:emerald_upgrade_smithing_template"
+    ]
+  }
+}

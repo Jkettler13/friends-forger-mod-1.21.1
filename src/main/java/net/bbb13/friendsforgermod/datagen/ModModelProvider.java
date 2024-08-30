@@ -32,6 +32,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.JONATHANS_RUBIKS_CUBE, Models.GENERATED);
         itemModelGenerator.register(ModItems.JONATHANS_BLACK_BELT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SLADERS_CONTROLLER, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENERGY_DRINK, Models.GENERATED);
         itemModelGenerator.register(ModItems.CRE8IVES_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.CRE8IVES_SKATEBOARD, Models.GENERATED);
@@ -46,6 +47,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.CAT_ZOE, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.LONSDALEITE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.LONSDALEITE_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.LONSDALEITE_AXE, Models.HANDHELD);
@@ -61,6 +63,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.SILK_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.SILK_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.SILK_BOOTS);
+
+        itemModelGenerator.register(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.EMERALD_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.EMERALD_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.EMERALD_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.EMERALD_BOOTS);
 
     }
 }
