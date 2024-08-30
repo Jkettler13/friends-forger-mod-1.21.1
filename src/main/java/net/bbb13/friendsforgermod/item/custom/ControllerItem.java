@@ -40,6 +40,7 @@ public class ControllerItem extends Item {
 
         return ActionResult.SUCCESS;
     }
+
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) {
         user.sendMessage(Text.literal(entity.getType().toString()));
         return ActionResult.SUCCESS;
