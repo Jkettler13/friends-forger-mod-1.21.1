@@ -9,7 +9,6 @@ public class FriendsForgerModClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
 
-
         EntityRendererRegistry.register(ModEntities.DISC_PROJECTILE, FlyingItemEntityRenderer::new);
     }
 }
