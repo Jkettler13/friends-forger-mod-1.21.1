@@ -1,16 +1,78 @@
 {
   "item.friendsforgermod.jonathans_black_belt": "Jonathan's Black Belt",
   "item.friendsforgermod.jonathans_rubiks_cube": "Jonathan's Rubik's Cube",
-  "item.friendsforgermod.cre8ives_disc": "Cre8ive's Disc",
-  "item.friendsforgermod.energy_drink": "Energy Drink",
-  "item.friendsforgermod.lonsdaleite": "Lonsdaleite",
 
-  "tooltip.friendsforgermod.energy_drink.tooltip": "Gives Speed III and Jump Boost for 20 seconds",
+  "item.friendsforgermod.cre8ives_disc": "Cre8ive's Disc",
+  "item.friendsforgermod.cre8ives_skateboard": "Cre8ive's Skateboard",
+  "tooltip.friendsforgermod.cre8ives_skateboard.tooltip": "skateboard go brrrr",
+
+  "item.friendsforgermod.markee_song_music_disc": "Cre8ive's Music Disc",
+  "sounds.friendsforgermod.markee_song_music_disc": "Cre8ive's Song",
+  "jukebox_song.friendsforgermod.markee_song_music_disc": "Rex Orange County - Corduroy Dreams",
+  "item.friendsforgermod.cre8ives_boom_box": "Cre8ive's Boom Box",
+  "tooltip.friendsforgermod.cre8ives_boom_box.tooltip": "Plays Bangers only",
+  "entity.minecraft.villager.hipster": "What Up Dude? Hipster",
+
+
+  "item.friendsforgermod.sladers_controller": "S1ader's Contro11er",
+  "tooltip.friendsforgermod.sladers_controller.tooltip": "On Use, change spawner contents, village trades & chest loot",
+
+  "item.friendsforgermod.cat_zoe": "Lex's Cat Zoe",
+
+  "item.friendsforgermod.web_gun": "Sticky Blicky",
+  "tooltip.friendsforgermod.web_gun.tooltip": "Uses Net Ammo, Roots Entity (0:02)",
+  "item.friendsforgermod.net_ammo": "Net Ammo",
+
+  "item.friendsforgermod.silk": "Silk",
+  "item.friendsforgermod.silk_helmet": "Silk Helmet",
+  "item.friendsforgermod.silk_chestplate": "Silk Chestplate",
+  "item.friendsforgermod.silk_leggings": "Silk Leggings",
+  "item.friendsforgermod.silk_boots": "Silk Boots",
+  "tooltip.friendsforgermod.mod_armor_item2.tooltip": "Full Set: Friendly to Spiders? Climbs Walls?",
+
+
+  "item.friendsforgermod.lonsdaleite_upgrade_smithing_template": "Smithing Template",
+  "item.friendsforgermod.smithing_template.lonsdaleite_upgrade.additions_slot_description": "Add Lonsdaleite",
+  "item.friendsforgermod.smithing_template.lonsdaleite_upgrade.applies_to": "Diamond Equipment",
+  "item.friendsforgermod.smithing_template.lonsdaleite_upgrade.base_slot_description": "Add diamond armor, weapon, or tool",
+  "item.friendsforgermod.smithing_template.lonsdaleite_upgrade.ingredients": "Lonsdaleite",
+  "upgrade.friendsforgermod.lonsdaleite_upgrade": "Lonsdaleite Upgrade",
+
+  "item.friendsforgermod.lonsdaleite": "Lonsdaleite",
+  "item.friendsforgermod.lonsdaleite_sword": "Lonsdaleite Sword",
+  "item.friendsforgermod.lonsdaleite_pickaxe": "Lonsdaleite Pickaxe",
+  "item.friendsforgermod.lonsdaleite_axe": "Lonsdaleite Axe",
+  "item.friendsforgermod.lonsdaleite_shovel": "Lonsdaleite Shovel",
+  "item.friendsforgermod.lonsdaleite_hoe": "Lonsdaleite Hoe",
+
+  "item.friendsforgermod.lonsdaleite_helmet": "Lonsdaleite Helmet",
+  "item.friendsforgermod.lonsdaleite_chestplate": "Lonsdaleite Chestplate",
+  "item.friendsforgermod.lonsdaleite_leggings": "Lonsdaleite Leggings",
+  "item.friendsforgermod.lonsdaleite_boots": "Lonsdaleite Boots",
+  "tooltip.friendsforgermod.mod_armor_item.tooltip": "Full Set: Speed I & Health Boost I",
+
+
+  "item.friendsforgermod.emerald_upgrade_smithing_template": "Smithing Template",
+  "item.friendsforgermod.smithing_template.emerald_upgrade.additions_slot_description": "Add Emerald",
+  "item.friendsforgermod.smithing_template.emerald_upgrade.applies_to": "Gold Armor",
+  "item.friendsforgermod.smithing_template.emerald_upgrade.base_slot_description": "Add gold armor",
+  "item.friendsforgermod.smithing_template.emerald_upgrade.ingredients": "Emerald",
+  "upgrade.friendsforgermod.emerald_upgrade": "Emerald Upgrade",
+
+  "item.friendsforgermod.emerald_helmet": "Emerald Helmet",
+  "item.friendsforgermod.emerald_chestplate": "Emerald Chestplate",
+  "item.friendsforgermod.emerald_leggings": "Emerald Leggings",
+  "item.friendsforgermod.emerald_boots": "Emerald Boots",
+  "tooltip.friendsforgermod.mod_armor_item3.tooltip": "Full Set: Hero of the Village V",
+
+
+  "item.friendsforgermod.energy_drink": "Energy Drink",
+  "tooltip.friendsforgermod.energy_drink.tooltip": "Speed III and Jump Boost (0:20)",
 
   "block.friendsforgermod.medicine_block": "Medicine Block",
+  "tooltip.friendsforgermod.medicine_block.tooltip": "On Use, Regen V (0:10)",
 
-  "tooltip.friendsforgermod.medicine_block.tooltip": "On Right Click, gives Regen V for 10 seconds",
-
+  "block.friendsforgermod.media_block": "Multimedia Table",
   "block.friendsforgermod.cheese_block": "Block of Cheese",
   "block.friendsforgermod.gradient_block": "Gradient Block",
 
@@ -18,6 +80,13 @@
   "block.friendsforgermod.marble_stairs": "Marble Stairs",
   "block.friendsforgermod.marble_slab": "Marble Slab",
   "block.friendsforgermod.marble_wall": "Marble Wall",
+
+  "sounds.friendsforgermod.medicine_block_break": "Medicine Block break",
+  "sounds.friendsforgermod.medicine_block_fall": "Medicine Block fall",
+  "sounds.friendsforgermod.medicine_block_hit": "Medicine Block hit",
+  "sounds.friendsforgermod.medicine_block_place": "Medicine Block place",
+  "sounds.friendsforgermod.medicine_block_step": "Medicine Block step",
+  "sounds.friendsforgermod.web_gun_hit": "Sticky Blicky fired!",
 
   "itemgroup.friends_items": "Friends Forger Items"
 }

@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "jukebox_song.friendsforgermod.markee_song_music_disc"
+  },
+  "length_in_seconds": 207.0,
+  "sound_event": "friendsforgermod:markee_song_music_disc"
+}

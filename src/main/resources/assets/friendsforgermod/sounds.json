@@ -1,0 +1,44 @@
+{
+  "medicine_block_break": {
+    "subtitle": "sounds.friendsforgermod.medicine_block_break",
+    "sounds": [
+      "friendsforgermod:medicine_block_break"
+    ]
+  },
+  "medicine_block_fall": {
+    "subtitle": "sounds.friendsforgermod.medicine_block_fall",
+    "sounds": [
+      "friendsforgermod:medicine_block_fall"
+    ]
+  },
+  "medicine_block_hit": {
+    "subtitle": "sounds.friendsforgermod.medicine_block_hit",
+    "sounds": [
+      "friendsforgermod:medicine_block_hit"
+    ]
+  },
+  "medicine_block_place": {
+    "subtitle": "sounds.friendsforgermod.medicine_block_place",
+    "sounds": [
+      "friendsforgermod:medicine_block_place"
+    ]
+  },
+  "medicine_block_step": {
+    "subtitle": "sounds.friendsforgermod.medicine_block_step",
+    "sounds": [
+      "friendsforgermod:medicine_block_step"
+    ]
+  },
+  "markee_song_music_disc": {
+    "subtitle": "sounds.friendsforgermod.markee_song_music_disc",
+    "sounds": [
+      "friendsforgermod:markee_song_music_disc"
+    ]
+  },
+  "web_gun_hit": {
+    "subtitle": "sounds.friendsforgermod.web_gun_hit",
+    "sounds": [
+      "friendsforgermod:web_gun_hit"
+    ]
+  }
+}

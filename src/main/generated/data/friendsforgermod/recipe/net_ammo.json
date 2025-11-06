@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "friendsforgermod:silk"
+    },
+    "T": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " T ",
+    "#S#",
+    " T "
+  ],
+  "result": {
+    "count": 3,
+    "id": "friendsforgermod:net_ammo"
+  }
+}

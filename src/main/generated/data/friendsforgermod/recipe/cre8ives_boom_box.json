@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:blaze_rod"
+    },
+    "C": {
+      "item": "minecraft:gray_carpet"
+    },
+    "I": {
+      "item": "minecraft:iron_block"
+    },
+    "J": {
+      "item": "minecraft:jukebox"
+    }
+  },
+  "pattern": [
+    " B ",
+    "IJI",
+    " C "
+  ],
+  "result": {
+    "count": 1,
+    "id": "friendsforgermod:cre8ives_boom_box"
+  }
+}

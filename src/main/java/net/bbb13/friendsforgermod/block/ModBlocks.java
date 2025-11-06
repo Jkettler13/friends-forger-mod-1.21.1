@@ -2,6 +2,7 @@ package net.bbb13.friendsforgermod.block;
 
 import net.bbb13.friendsforgermod.FriendsForgerMod;
 import net.bbb13.friendsforgermod.block.custom.MedicineBlock;
+import net.bbb13.friendsforgermod.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
@@ -14,14 +15,15 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     public static final Block MEDICINE_BLOCK = registerBlock("medicine_block",
-            new MedicineBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).luminance(state -> 8).requiresTool()));
+            new MedicineBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).luminance(state -> 14).sounds(ModSounds.MEDICINE_BLOCK_SOUNDS).requiresTool()));
     public static final Block CHEESE_BLOCK = registerBlock("cheese_block",
             new Block(AbstractBlock.Settings.copy(Blocks.RED_MUSHROOM_BLOCK)));
     public static final Block GRADIENT_BLOCK = registerBlock("gradient_block",
             new Block(AbstractBlock.Settings.copy(Blocks.SCULK)));
     public static final Block MARBLE_BLOCK = registerBlock("marble_block",
             new Block(AbstractBlock.Settings.copy(Blocks.CALCITE).requiresTool()));
-
+    public static final Block MEDIA_BLOCK = registerBlock("media_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.JUKEBOX)));
 
     public static final Block MARBLE_STAIRS = registerBlock("marble_stairs",
             new StairsBlock(ModBlocks.MARBLE_BLOCK.getDefaultState(), AbstractBlock.Settings.copy(Blocks.CALCITE).requiresTool()));

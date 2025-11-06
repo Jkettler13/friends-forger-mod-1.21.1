@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "E": {
+      "item": "minecraft:spider_eye"
+    },
+    "L": {
+      "item": "friendsforgermod:silk"
+    }
+  },
+  "pattern": [
+    "E E",
+    "L L"
+  ],
+  "result": {
+    "count": 1,
+    "id": "friendsforgermod:silk_boots"
+  }
+}

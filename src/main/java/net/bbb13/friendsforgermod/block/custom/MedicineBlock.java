@@ -1,5 +1,6 @@
 package net.bbb13.friendsforgermod.block.custom;
 
+import net.bbb13.friendsforgermod.sound.ModSounds;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -8,6 +9,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.tooltip.TooltipType;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
@@ -27,6 +29,7 @@ public class MedicineBlock extends Block {
     @Override
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
         if (world.isPlayerInRange(pos.getX(), pos.getY(), pos.getZ(), 5.0)) {
+            world.playSoundAtBlockCenter(pos, ModSounds.MEDICINE_BLOCK_PLACE, SoundCategory.BLOCKS, 1,1, true);
             player.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 200, 4));
         }
         return ActionResult.SUCCESS;

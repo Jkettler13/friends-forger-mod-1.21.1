@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "L": {
+      "item": "friendsforgermod:silk"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "L L"
+  ],
+  "result": {
+    "count": 1,
+    "id": "friendsforgermod:silk_helmet"
+  }
+}
