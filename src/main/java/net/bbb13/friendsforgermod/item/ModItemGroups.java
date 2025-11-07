@@ -30,6 +30,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MEDIA_BLOCK);
 
                         entries.add(ModItems.CAT_ZOE);
+                        entries.add(ModItems.CAT_OLIVE);
 
                         entries.add(ModItems.WEB_GUN);
                         entries.add(ModItems.NET_AMMO);

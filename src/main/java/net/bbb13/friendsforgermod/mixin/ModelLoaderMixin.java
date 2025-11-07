@@ -28,6 +28,7 @@ public abstract class ModelLoaderMixin {
         this.loadItemModel(new ModelIdentifier(Identifier.of(FriendsForgerMod.MOD_ID,"jonathans_rubiks_cube_3d"),"inventory"));
         this.loadItemModel(new ModelIdentifier(Identifier.of(FriendsForgerMod.MOD_ID,"web_gun_3d"),"inventory"));
         this.loadItemModel(new ModelIdentifier(Identifier.of(FriendsForgerMod.MOD_ID,"cat_zoe_3d"),"inventory"));
+        this.loadItemModel(new ModelIdentifier(Identifier.of(FriendsForgerMod.MOD_ID,"cat_olive_3d"),"inventory"));
         this.loadItemModel(new ModelIdentifier(Identifier.of(FriendsForgerMod.MOD_ID,"cre8ives_boom_box_3d"),"inventory"));
         this.loadItemModel(new ModelIdentifier(Identifier.of(FriendsForgerMod.MOD_ID,"cre8ives_disc_3d"),"inventory"));
     }

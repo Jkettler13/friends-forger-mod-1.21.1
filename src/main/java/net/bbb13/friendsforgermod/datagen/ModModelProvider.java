@@ -46,6 +46,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.LONSDALEITE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.CAT_ZOE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CAT_OLIVE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.LONSDALEITE_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.LONSDALEITE_SWORD, Models.HANDHELD);
