@@ -21,6 +21,6 @@ public class ModPoiTagProvider extends TagProvider<PointOfInterestType>{
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup lookup) {
-        this.getOrCreateTagBuilder(PointOfInterestTypeTags.ACQUIRABLE_JOB_SITE).addOptional(Identifier.of(FriendsForgerMod.MOD_ID, "mediapoi"));
+        this.getOrCreateTagBuilder(PointOfInterestTypeTags.ACQUIRABLE_JOB_SITE).addOptional(Identifier.of(FriendsForgerMod.MOD_ID, "media_poi"));
     }
 }

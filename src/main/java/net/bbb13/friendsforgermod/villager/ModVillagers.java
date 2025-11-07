@@ -16,12 +16,12 @@ import net.minecraft.world.poi.PointOfInterestType;
 
 
 public class ModVillagers {
-    public static final RegistryKey<PointOfInterestType> MEDIA_POI_KEY = poiKey("mediapoi");
-    public static final PointOfInterestType MEDIA_POI = registerPoi("mediapoi", ModBlocks.MEDIA_BLOCK);
+    public static final RegistryKey<PointOfInterestType> MEDIA_POI_KEY = registerPoiKey("media_poi");
+    public static final PointOfInterestType MEDIA_POI = registerPoi("media_poi", ModBlocks.MEDIA_BLOCK);
 
-    public static final VillagerProfession HIPSTER = regiserProfession("hipster", MEDIA_POI_KEY);
+    public static final VillagerProfession HIPSTER = registerProfession("hipster", MEDIA_POI_KEY);
 
-    private static VillagerProfession regiserProfession(String name, RegistryKey<PointOfInterestType> type){
+    private static VillagerProfession registerProfession(String name, RegistryKey<PointOfInterestType> type){
         return Registry.register(Registries.VILLAGER_PROFESSION, Identifier.of(FriendsForgerMod.MOD_ID, name),
                 new VillagerProfession(name,entry-> entry.matchesKey(type), entry -> entry.matchesKey(type),
                         ImmutableSet.of(), ImmutableSet.of(), SoundEvents.ENTITY_VILLAGER_WORK_SHEPHERD));
@@ -32,7 +32,7 @@ public class ModVillagers {
     }
 
 
-    private static RegistryKey<PointOfInterestType> poiKey(String name){
+    private static RegistryKey<PointOfInterestType> registerPoiKey(String name){
         return RegistryKey.of(RegistryKeys.POINT_OF_INTEREST_TYPE, Identifier.of(FriendsForgerMod.MOD_ID, name));
     }
 
