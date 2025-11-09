@@ -31,6 +31,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.CAT_ZOE);
                         entries.add(ModItems.CAT_OLIVE);
+                        entries.add(ModItems.LEXS_WINGS);
 
                         entries.add(ModItems.WEB_GUN);
                         entries.add(ModItems.NET_AMMO);

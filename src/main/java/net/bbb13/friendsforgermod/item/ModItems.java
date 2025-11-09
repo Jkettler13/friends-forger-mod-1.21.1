@@ -34,6 +34,7 @@ public class ModItems {
     public static final Item WEB_GUN = registerItem("web_gun", new WebGunItem(new Item.Settings().maxCount(1)));
     public static final Item NET_AMMO = registerItem("net_ammo", new NetAmmoItem(new Item.Settings()));
 
+    public static final Item LEXS_WINGS = registerItem("lexs_wings", new ModElytraItem(new Item.Settings().maxCount(1).maxDamage(432).rarity(Rarity.UNCOMMON)));
     public static final Item SILK = registerItem("silk", new Item(new Item.Settings()));
     public static final Item SILK_HELMET = registerItem("silk_helmet", new ModArmorItem(ModArmorMaterial.SILK, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(25))));
     public static final Item SILK_CHESTPLATE = registerItem("silk_chestplate", new ModArmorItem(ModArmorMaterial.SILK, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(25))));
